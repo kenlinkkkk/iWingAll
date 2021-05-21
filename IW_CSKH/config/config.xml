@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+	<link_clearcache>http://127.0.0.1:5232/liveplay/api4xgroup.jsp?justclearcache</link_clearcache>
+	<vasbase_type>normal</vasbase_type>
+	<service_name>VHPD</service_name>
+	<time_launching>201604</time_launching>
+	
+	<!-- config để CMS vas query bảng mo/mt theo năm -->
+	<sms_shorttable>2016</sms_shorttable>
+	<sms_shorttable>2017</sms_shorttable>
+	<sms_shorttable>2018</sms_shorttable> 
+	<sms_shorttable>2019</sms_shorttable>
+	<sms_shorttable>2020</sms_shorttable>
+	<sms_shorttable>2021</sms_shorttable>
+	<sms_shorttable>2022</sms_shorttable>
+	<sms_shorttable>2023</sms_shorttable>
+	<sms_shorttable>2024</sms_shorttable>
+	<sms_shorttable>2025</sms_shorttable>
+	
+	<acc_config user="hien.cskh" fullname="CSKH" pass="9f12ed29689a12c9be0285a07caac4aa" role="" maxunreg="50"></acc_config>
+	<acc_config user="vinh.pham" fullname="Phạm Hữu Vinh" pass="60e8f4fa803018f8363ce1c5ea2e50a2" role=";kd;admin;cskh;" maxunreg="50"></acc_config>
+	<acc_config user="duc" fullname="Đức Bi" pass="fcc067720baecc2d58ee149b3f4202c8" role=";kd;admin;cskh;" maxunreg="1"></acc_config>
+	 
+	<link_alarm_sms>http://localhost:3081/api/get?action=sendsms&amp;msisdn=@msisdn&amp;content=@content</link_alarm_sms>
+	<list_alarm_msisdn>0909090529</list_alarm_msisdn>
+	<list_alarm_msisdn>#0909...</list_alarm_msisdn>
+	 
+	<ccsp_cms>
+		<link_unreg>http://localhost:8888/ccsp/unregister.jsp?msisdn=@msisdn&amp;pkgcode=@pkgcode&amp;user=@user</link_unreg> 
+	</ccsp_cms>
+	
+	<report_by_cpid name="--All--"><![CDATA[]]></report_by_cpid>
+	<report_by_cpid name="migrate"><![CDATA[and cpid = 'migrate']]></report_by_cpid>
+	
+	<mobion_ctkm201 from="2020-01-01 00:00:00" to="2020-05-16 23:59:59">
+		<item type='month' name='Tháng 1: từ ngày 16/02/2020 đến hết ngày 16/03/2020' from='2020-02-16 00:00:00' to='2020-03-16 23:59:59' />
+		<item type='month' name='Tháng 2: từ ngày 17/03/2020 đến hết ngày 15/04/2020' from='2020-03-17 00:00:00' to='2020-04-15 23:59:59' />
+		<item type='month' name='Tháng 3: từ ngày 16/04/2020 đến hết ngày 15/05/2020' from='2020-04-16 00:00:00' to='2020-05-15 23:59:59' />
+		
+		<item type='week' name='Tuần 1: từ ngày 16/02/2020 đến hết ngày 22/02/2020' from='2020-02-16 00:00:00' to='2020-02-22 23:59:59' />
+		<item type='week' name='Tuần 2: từ ngày 23/02/2020 đến hết ngày 29/02/2020' from='2020-02-23 00:00:00' to='2020-02-29 23:59:59' />
+		<item type='week' name='Tuần 3: từ ngày 01/03/2020 đến hết ngày 07/03/2020' from='2020-03-01 00:00:00' to='2020-03-07 23:59:59' />
+		<item type='week' name='Tuần 4: từ ngày 08/03/2020 đến hết ngày 14/03/2020' from='2020-03-08 00:00:00' to='2020-03-14 23:59:59' />
+		<item type='week' name='Tuần 5: từ ngày 15/03/2020 đến hết ngày 21/03/2020' from='2020-03-15 00:00:00' to='2020-03-21 23:59:59' />
+		<item type='week' name='Tuần 6: từ ngày 22/03/2020 đến hết ngày 28/03/2020' from='2020-03-22 00:00:00' to='2020-03-28 23:59:59' />
+		<item type='week' name='Tuần 7: từ ngày 29/03/2020 đến hết ngày 04/04/2020' from='2020-03-29 00:00:00' to='2020-04-04 23:59:59' />
+		<item type='week' name='Tuần 8: từ ngày 05/04/2020 đến hết ngày 11/04/2020' from='2020-04-05 00:00:00' to='2020-04-11 23:59:59' />
+		<item type='week' name='Tuần 9: từ ngày 12/04/2020 đến hết ngày 18/04/2020' from='2020-04-12 00:00:00' to='2020-04-18 23:59:59' />
+		<item type='week' name='Tuần 10: từ ngày 19/04/2020 đến hết ngày 25/04/2020' from='2020-04-19 00:00:00' to='2020-04-25 23:59:59' />
+		<item type='week' name='Tuần 11: từ ngày 26/04/2020 đến hết ngày 02/05/2020' from='2020-04-26 00:00:00' to='2020-05-02 23:59:59' />
+		<item type='week' name='Tuần 12: từ ngày 03/05/2020 đến hết ngày 09/05/2020' from='2020-05-03 00:00:00' to='2020-05-09 23:59:59' />
+		<item type='week' name='Tuần 13: từ ngày 10/05/2020 đến hết ngày 16/05/2020' from='2020-05-10 00:00:00' to='2020-05-16 23:59:59' />
+	</mobion_ctkm201>	
+	
+</configuration>

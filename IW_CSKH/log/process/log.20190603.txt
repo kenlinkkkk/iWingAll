@@ -1,0 +1,14 @@
+INFO [2019-06-03 15:43:26,100] - [DBNormalPool.createNewConnection.209] - init, create new conn successfully, conn = com.mysql.jdbc.JDBC4Connection@10287d, time = 500
+INFO [2019-06-03 15:43:26,100] - [DBNormalPool.getInstance.332  ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2019-06-03 15:44:33,940] - [DBNormalPool.createNewConnection.209] - init, create new conn successfully, conn = com.mysql.jdbc.JDBC4Connection@1bf7701, time = 391
+INFO [2019-06-03 15:44:33,940] - [DBNormalPool.getInstance.332  ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2019-06-03 15:44:44,646] - [DBNormalPool.createNewConnection.209] - init, create new conn successfully, conn = com.mysql.jdbc.JDBC4Connection@404991, time = 793
+INFO [2019-06-03 15:44:44,646] - [DBNormalPool.getInstance.332  ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2019-06-03 15:44:44,681] - [BaseUtils.deserializeObject.1679] - Can not deserializeObject, byteSize = 0
+INFO [2019-06-03 15:45:37,868] - [DBNormalPool.createNewConnection.209] - init, create new conn successfully, conn = com.mysql.jdbc.JDBC4Connection@d313e6, time = 472
+INFO [2019-06-03 15:45:37,868] - [DBNormalPool.getInstance.332  ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2019-06-03 15:46:33,651] - [DBNormalPool.createNewConnection.209] - init, create new conn successfully, conn = com.mysql.jdbc.JDBC4Connection@9ddf21, time = 859
+INFO [2019-06-03 15:46:33,651] - [DBNormalPool.getInstance.332  ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2019-06-03 15:46:33,687] - [BaseUtils.deserializeObject.1679] - Can not deserializeObject, byteSize = 0
+INFO [2019-06-03 15:47:07,694] - [DBNormalPool.createNewConnection.209] - init, create new conn successfully, conn = com.mysql.jdbc.JDBC4Connection@10287d, time = 360
+INFO [2019-06-03 15:47:07,694] - [DBNormalPool.getInstance.332  ] - Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool

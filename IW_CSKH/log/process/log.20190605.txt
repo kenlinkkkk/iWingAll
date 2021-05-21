@@ -1,0 +1,2 @@
+INFO [2019-06-05 09:33:58,799] - [DBNormalPool.createNewConnection.204] - init, Create new connection fail ... (com.mysql.jdbc.Driver, xgrouptk, xgrouptk, jdbc:mysql://localhost:4267/mobileads?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull), Exception: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+INFO [2019-06-05 09:34:03,802] - [DBNormalPool.createNewConnection.198] - init, prepare to create new db connection

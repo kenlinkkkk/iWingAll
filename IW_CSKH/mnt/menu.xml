@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    
+	<menu name="Tài khoản" icon="icons/16/menu3.png" value="">
+		<item name="Trang chủ" icon="" page="tc"></item>
+		<item name="Đổi mật khẩu" icon="" page="dmk"></item>
+		<item name="#"/>
+		<item name="Quản lý tài khoản" icon="" page="qltk" value="admin"></item>
+		<item name="#"/>
+		<item name="Thoát" icon="" page="exit"></item>
+	</menu>
+	
+	<menu name="Cấu hình TT" icon="icons/16/menu3.png" value="">
+		<item name="Quản lý link đích" icon="" page="definedest" value=""></item>
+		<item name="Quản lý mã TT" icon="" page="maplink" value=""></item>
+		<item name="TK tổng hợp" icon="" page="report" value="admin"></item>
+	</menu>
+	
+	<menu name="Quản lý sshweb" icon="icons/16/menu3.png" value="supper">
+		<item name="Account" page="xjschacc" icon="" value="supper" tooltip="Tài khoản XSSHWEB"/>
+		<item name="Service" page="xjschservice" icon="" value="supper" tooltip="Dịch vụ XSSHWEB"/>
+		<item name="Links" page="xjschlink" icon="" value="supper" tooltip="LINK XSSHWEB"/>
+		<item name="Rules" page="xjschrule" icon="" value="supper" tooltip="Rule XSSHWEB"/>
+	</menu>
+
+	<!--menu name="Quản trị" icon="icons/16/menu3.png" value="admin">
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+		<item name="item1 of sub1" page="xyz1" icon="" value="">
+			<item name="subMenu level2" page="xyz1" icon="" value="">
+				<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+				<item name="#"/>
+				<item name="item1 of sub1" page="xyz1" icon="" value="">
+					<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+					<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+					<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+				</item>
+			</item>
+		</item>
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+		<item name="#" page=""></item>
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+		<item name="item1 of sub1" page="xyz1" icon="" value=""></item>
+	</menu-->
+	
+</configuration>

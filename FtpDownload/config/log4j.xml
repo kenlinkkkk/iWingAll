@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <root>
+	    <priority value="debug"></priority>
+		<appender-ref ref="ASYNC"/>
+	</root>
+	
+	<appender name="ASYNC" class="org.apache.log4j.AsyncAppender">
+		<appender-ref ref="INFOS" />
+		<appender-ref ref="CONSOLE" />
+	</appender>
+		
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%5p [%d] - [%-30Z{3}] - %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="INFOS" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/process/log" />
+		<param name="DatePattern" value=".yyyyMMdd'.txt'" />
+		<param name="Threshold" value="ALL" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%5p [%d] - [%-30Z{3}] - %m%n"/>
+		</layout>
+	</appender>
+
+</log4j:configuration>

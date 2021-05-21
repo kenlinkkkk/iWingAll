@@ -1,0 +1,8 @@
+SCMBranch=VASManagement_1.0_VNM
+SCMRepository=VASManagement_1.0_VNM/04.Construction/trunk/Vas Monthly Billing 1.0/src/com/elcom/vasmanagement/vasmonthlybilling/common/interfaces
+ServiceBase.java;50440896;2;1271063184;
+IConfig.java;3243102320;1;1270097456;
+IApplication.java;3342802482;1;1270097456;
+AlarmInterface.java;3468272908;1;1270097455;
+DBInterface.java;556344106;1;1274599929;
+FileExportInterface.java;573051882;1;1274607109;

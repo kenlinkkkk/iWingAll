@@ -1,0 +1,12 @@
+INFO [2021-02-28 01:14:11,760] - [DBNormalPool.createConn.217   ] - init, create conn OK, pool: main, conn: com.mysql.jdbc.JDBC4Connection@33a10788, time: 783
+INFO [2021-02-28 01:14:11,762] - [DBNormalPool.getInstance.343  ] - main, Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2021-02-28 11:52:54,953] - [BaseUtils.deserializeObject.2996] - cacheLoad1, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:52:54,956] - [BaseUtils.deserializeObject.2996] - cacheLoad2, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:54:39,614] - [BaseUtils.deserializeObject.2996] - cacheLoad1, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:54:39,618] - [BaseUtils.deserializeObject.2996] - cacheLoad2, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:54:53,054] - [BaseUtils.deserializeObject.2996] - cacheLoad1, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:54:53,056] - [BaseUtils.deserializeObject.2996] - cacheLoad2, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:56:12,985] - [BaseUtils.deserializeObject.2996] - cacheLoad1, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:56:12,987] - [BaseUtils.deserializeObject.2996] - cacheLoad2, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:59:50,046] - [BaseUtils.deserializeObject.2996] - cacheLoad1, Can not deserializeObject, byteSize = 0
+INFO [2021-02-28 11:59:50,050] - [BaseUtils.deserializeObject.2996] - cacheLoad2, Can not deserializeObject, byteSize = 0

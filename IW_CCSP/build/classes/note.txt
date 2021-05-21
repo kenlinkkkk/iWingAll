@@ -1,0 +1,25 @@
+DB , Bảng his: 
+subnote1 = group CPID
+subnote2 = số tiền trừ gia hạn/đk lại của gói, ko reset khi hủy/dk lại   (hoặc k phải số tiền mà là số lần , phụ thuộc hàm AppUtils.subnote23Increase1() )
+subnote3 = số tiền trừ gia hạn/đk lại của gói, reset khi hủy/dk lại		 (hoặc k phải số tiền mà là số lần , phụ thuộc hàm AppUtils.subnote23Increase1() )
+...
+subnote5 = topup result
+
+
+hisnote1 = today = yyyyMMdd
+hisnote2 = đối với action = UNREG => là kênh DK
+
+* cattiensa play
+noteint1 điểm mua thêm
+noteint2 điểm đã dùng
+
+------------------  2020 05 05
+ALTER TABLE `subscriber` 
+ADD COLUMN `subnote1` varchar(30);
+
+ALTER TABLE `subscriber` 
+ADD COLUMN `noteint1` INT(10) NOT NULL DEFAULT 0,
+ADD COLUMN `noteint2` INT(10) NOT NULL DEFAULT 0,
+ADD COLUMN `noteint3` INT(10) NOT NULL DEFAULT 0,
+ADD COLUMN `noteint4` INT(10) NOT NULL DEFAULT 0,
+ADD COLUMN `noteint5` INT(10) NOT NULL DEFAULT 0;

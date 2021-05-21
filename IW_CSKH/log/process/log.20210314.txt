@@ -1,0 +1,124 @@
+INFO [2021-03-14 02:42:42,915] - [BaseDAO.getListBySql0.1812    ] - test$FShopee_comment2.dialogSubmit_.199, sql=select * from proxy_info where status = 1 and lastcheck > now() - interval 1 day| found 18 records, time=969
+INFO [2021-03-14 02:42:46,973] - [FShopee_comment2.dialogSubmit_.212] - test, LOAD PageCmt 1, URL: https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid=5159889696&limit=59&offset=0&shopid=35390125&type=5
+INFO [2021-03-14 02:43:51,327] - [FShopee_comment2.dialogSubmit_.269] - test, not found cmt
+INFO [2021-03-14 02:46:39,181] - [BaseDAO.getListBySql0.1812    ] - test$FShopee_comment2.dialogSubmit_.202, sql=select * from proxy_info where status = 1 and lastcheck > now() - interval 1 day| found 18 records, time=67
+INFO [2021-03-14 02:46:42,938] - [FShopee_comment2.dialogSubmit_.215] - test, LOAD PageCmt 1, URL: https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid=5159889696&limit=59&offset=0&shopid=35390125&type=5
+INFO [2021-03-14 02:47:19,074] - [CmdCallItemJson.get.84        ] - test, prepare call API item thisIP: https://shopee.vn/api/v2/item/get?itemid=5159889696&shopid=35390125
+INFO [2021-03-14 02:47:32,140] - [BaseDAO.execSqlMySql.969      ] - test$FShopee_comment2.dialogSubmit_.335, Exception: Column 'shopid' cannot be null, SQL=INSERT INTO clicktool_comment(name, shopid, transid, itemid, cmt_time, url, cmt_vote, cmt_user, cmt_id, cmt_userid, note1, xdate, note3, like_1day, status, cmt_cate, customer, xtime, cmt_text, img, xint1, xint2, note2, xint3, like_max, like_count, cmt_shopid) VALUES('Lẩu tự sôi hải sản full topping tôm bào ngư ngao bạch tuộc lau tu soi chua cay', null, null, null, '2021-01-20 10:39', 'https://shopee.vn/L%E1%BA%A9u-t%E1%BB%B1-s%C3%B4i-h%E1%BA%A3i-s%E1%BA%A3n-full-topping-t%C3%B4m-b%C3%A0o-ng%C6%B0-ngao-b%E1%BA%A1ch-tu%E1%BB%99c-lau-tu-soi-chua-cay-i.35390125.5159889696', 5, 'tuyetmieu', '3889150522', '24713813', null, 0, null, 5, 0, null, null, null, 'Giao hàng nhanh. Đúng số lượng
+Mình đặt lẩu hải sản nhưng shop giao lẩu bò thì phải ko biết do hết hàng hay giao nhầm😅
+Sẽ tiếp tục ủng hộ ạ', 'https://cf.shopee.vn/file/8ae70613eca1282f316fca44105d153d_tn', null, null, null, null, 35, 0, '24712477'), params=[]
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'shopid' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSqlMySql(BaseDAO.java:937)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBeanFields(BaseDAO.java:847)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBeanFields(XBaseDAO.java:393)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBean(BaseDAO.java:801)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBean(XBaseDAO.java:359)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.dialogSubmit_(FShopee_comment2.java:335)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.main(FShopee_comment2.java:175)
+INFO [2021-03-14 02:48:48,650] - [BaseDAO.getListBySql0.1812    ] - test$FShopee_comment2.dialogSubmit_.204, sql=select * from proxy_info where status = 1 and lastcheck > now() - interval 1 day| found 18 records, time=85
+INFO [2021-03-14 02:48:54,637] - [FShopee_comment2.dialogSubmit_.217] - test, LOAD PageCmt 1, URL: https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid=5159889696&limit=59&offset=0&shopid=35390125&type=5
+INFO [2021-03-14 02:48:56,248] - [CmdCallItemJson.get.84        ] - test, prepare call API item thisIP: https://shopee.vn/api/v2/item/get?itemid=5159889696&shopid=35390125
+INFO [2021-03-14 02:48:59,885] - [BaseDAO.execSqlMySql.969      ] - test$FShopee_comment2.dialogSubmit_.337, Exception: Incorrect string value: '\xF0\x9F\x98\x85\x0AS...' for column 'cmt_text' at row 1, SQL=INSERT INTO clicktool_comment(name, cmt_time, cmt_id, shopid, itemid, transid, cmt_user, cmt_vote, url, xint1, xdate, xint2, cmt_cate, cmt_userid, xint3, like_max, cmt_shopid, img, cmt_text, customer, status, like_count, note1, note3, note2, xtime, like_1day) VALUES('Lẩu tự sôi hải sản full topping tôm bào ngư ngao bạch tuộc lau tu soi chua cay', '2021-01-20 10:39', '3889150522', '35390125', '5159889696', null, 'tuyetmieu', 5, 'https://shopee.vn/L%E1%BA%A9u-t%E1%BB%B1-s%C3%B4i-h%E1%BA%A3i-s%E1%BA%A3n-full-topping-t%C3%B4m-b%C3%A0o-ng%C6%B0-ngao-b%E1%BA%A1ch-tu%E1%BB%99c-lau-tu-soi-chua-cay-i.35390125.5159889696', null, 0, null, null, '24713813', null, 35, '24712477', 'https://cf.shopee.vn/file/8ae70613eca1282f316fca44105d153d_tn', 'Giao hàng nhanh. Đúng số lượng
+Mình đặt lẩu hải sản nhưng shop giao lẩu bò thì phải ko biết do hết hàng hay giao nhầm😅
+Sẽ tiếp tục ủng hộ ạ', null, 0, 0, null, null, null, null, 5), params=[]
+java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\x85\x0AS...' for column 'cmt_text' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSqlMySql(BaseDAO.java:937)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBeanFields(BaseDAO.java:847)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBeanFields(XBaseDAO.java:393)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBean(BaseDAO.java:801)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBean(XBaseDAO.java:359)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.dialogSubmit_(FShopee_comment2.java:337)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.main(FShopee_comment2.java:175)
+INFO [2021-03-14 02:50:16,410] - [BaseDAO.getListBySql0.1812    ] - test$FShopee_comment2.dialogSubmit_.204, sql=select * from proxy_info where status = 1 and lastcheck > now() - interval 1 day| found 18 records, time=55
+INFO [2021-03-14 02:50:17,726] - [FShopee_comment2.dialogSubmit_.217] - test, LOAD PageCmt 1, URL: https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid=5159889696&limit=59&offset=0&shopid=35390125&type=5
+INFO [2021-03-14 02:50:19,405] - [CmdCallItemJson.get.84        ] - test, prepare call API item thisIP: https://shopee.vn/api/v2/item/get?itemid=5159889696&shopid=35390125
+INFO [2021-03-14 02:50:23,390] - [BaseDAO.execSqlMySql.969      ] - test$FShopee_comment2.dialogSubmit_.338, Exception: Column 'customer' cannot be null, SQL=INSERT INTO clicktool_comment(name, url, cmt_id, cmt_vote, cmt_time, cmt_user, transid, shopid, itemid, img, status, cmt_text, cmt_cate, cmt_shopid, cmt_userid, customer, like_max, like_count, note1, xint2, note2, note3, xtime, xint3, xint1, like_1day, xdate) VALUES('Lẩu tự sôi hải sản full topping tôm bào ngư ngao bạch tuộc lau tu soi chua cay', 'https://shopee.vn/L%E1%BA%A9u-t%E1%BB%B1-s%C3%B4i-h%E1%BA%A3i-s%E1%BA%A3n-full-topping-t%C3%B4m-b%C3%A0o-ng%C6%B0-ngao-b%E1%BA%A1ch-tu%E1%BB%99c-lau-tu-soi-chua-cay-i.35390125.5159889696', '3889150522', 5, '2021-01-20 10:39', 'tuyetmieu', null, '35390125', '5159889696', 'https://cf.shopee.vn/file/8ae70613eca1282f316fca44105d153d_tn', 0, 'Giao hàng nhanh. Đúng số lượng Mình đặt lẩu hải sản nhưng shop giao lẩu bò thì phải ko biết do hết hàng hay giao nhầm Sẽ tiếp tục ủng hộ ạ', null, '24712477', '24713813', null, 35, 0, null, null, null, null, null, null, null, 5, 0), params=[]
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'customer' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSqlMySql(BaseDAO.java:937)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBeanFields(BaseDAO.java:847)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBeanFields(XBaseDAO.java:393)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBean(BaseDAO.java:801)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBean(XBaseDAO.java:359)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.dialogSubmit_(FShopee_comment2.java:338)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.main(FShopee_comment2.java:175)
+INFO [2021-03-14 02:51:26,147] - [BaseDAO.getListBySql0.1812    ] - test$FShopee_comment2.dialogSubmit_.205, sql=select * from proxy_info where status = 1 and lastcheck > now() - interval 1 day| found 18 records, time=92
+INFO [2021-03-14 02:51:28,853] - [FShopee_comment2.dialogSubmit_.218] - test, LOAD PageCmt 1, URL: https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid=5159889696&limit=59&offset=0&shopid=35390125&type=5
+INFO [2021-03-14 02:51:30,577] - [BaseUtils.deserializeObject.3025] - cacheLoad1, Can not deserializeObject, byteSize = 0
+INFO [2021-03-14 02:51:30,651] - [CmdCallItemJson.get.84        ] - test, prepare call API item thisIP: https://shopee.vn/api/v2/item/get?itemid=5159889696&shopid=35390125
+INFO [2021-03-14 02:51:30,876] - [BaseDAO.execSqlMySql.969      ] - test$FShopee_comment2.dialogSubmit_.339, Exception: Column 'xtime' cannot be null, SQL=INSERT INTO clicktool_comment(name, itemid, transid, shopid, cmt_time, cmt_id, url, cmt_user, cmt_vote, cmt_text, img, cmt_shopid, status, cmt_userid, xdate, xtime, cmt_cate, customer, xint1, xint2, like_max, note2, note3, xint3, like_1day, like_count, note1) VALUES('Lẩu tự sôi hải sản full topping tôm bào ngư ngao bạch tuộc lau tu soi chua cay', '5159889696', null, '35390125', '2021-01-20 10:39', '3889150522', 'https://shopee.vn/L%E1%BA%A9u-t%E1%BB%B1-s%C3%B4i-h%E1%BA%A3i-s%E1%BA%A3n-full-topping-t%C3%B4m-b%C3%A0o-ng%C6%B0-ngao-b%E1%BA%A1ch-tu%E1%BB%99c-lau-tu-soi-chua-cay-i.35390125.5159889696', 'tuyetmieu', 5, 'Giao hàng nhanh. Đúng số lượng Mình đặt lẩu hải sản nhưng shop giao lẩu bò thì phải ko biết do hết hàng hay giao nhầm Sẽ tiếp tục ủng hộ ạ', 'https://cf.shopee.vn/file/8ae70613eca1282f316fca44105d153d_tn', '24712477', 0, '24713813', 0, null, null, 'test1', null, null, 35, null, null, null, 5, 0, null), params=[]
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'xtime' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1951)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2046)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1964)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1949)
+	at com.ligerdev.appbase.utils.db.BaseDAO.execSqlMySql(BaseDAO.java:937)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBeanFields(BaseDAO.java:847)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBeanFields(XBaseDAO.java:393)
+	at com.ligerdev.appbase.utils.db.BaseDAO.insertBean(BaseDAO.java:801)
+	at com.ligerdev.appbase.utils.db.XBaseDAO.insertBean(XBaseDAO.java:359)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.dialogSubmit_(FShopee_comment2.java:339)
+	at com.gl.shopee.selfclick.form.comment.FShopee_comment2.main(FShopee_comment2.java:175)
+INFO [2021-03-14 02:52:46,165] - [DBNormalPool.createConn.217   ] - init, create conn OK, pool: main, conn: com.mysql.jdbc.JDBC4Connection@2d6e8792, time: 504
+INFO [2021-03-14 02:52:46,168] - [DBNormalPool.getInstance.343  ] - main, Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool
+INFO [2021-03-14 02:52:46,248] - [BaseDAO.getListBySql0.1812    ] - test$FShopee_comment2.dialogSubmit_.210, sql=select * from proxy_info where status = 1 and lastcheck > now() - interval 1 day| found 18 records, time=72
+INFO [2021-03-14 02:52:46,253] - [FShopee_comment2.dialogSubmit_.223] - test, LOAD PageCmt 1, URL: https://shopee.vn/api/v2/item/get_ratings?filter=0&flag=1&itemid=5159889696&limit=59&offset=0&shopid=35390125&type=5
+INFO [2021-03-14 02:52:47,784] - [CmdCallItemJson.get.84        ] - test, prepare call API item thisIP: https://shopee.vn/api/v2/item/get?itemid=5159889696&shopid=35390125
+INFO [2021-03-14 02:52:47,922] - [BaseDAO.execSqlMySql.949      ] - test$FShopee_comment2.dialogSubmit_.344, exeSql=INSERT INTO clicktool_comment(name, transid, itemid, shopid, url, cmt_vote, cmt_id, cmt_time, cmt_user, cmt_cate, status, cmt_userid, cmt_text, img, cmt_shopid, note3, xdate, xint3, xint1, like_max, like_count, customer, xtime, note2, like_1day, xint2, note1) VALUES('Lẩu tự sôi hải sản full topping tôm bào ngư ngao bạch tuộc lau tu soi chua cay', null, '5159889696', '35390125', 'https://shopee.vn/L%E1%BA%A9u-t%E1%BB%B1-s%C3%B4i-h%E1%BA%A3i-s%E1%BA%A3n-full-topping-t%C3%B4m-b%C3%A0o-ng%C6%B0-ngao-b%E1%BA%A1ch-tu%E1%BB%99c-lau-tu-soi-chua-cay-i.35390125.5159889696', 5, '3889150522', '2021-01-20 10:39', 'tuyetmieu', null, 0, '24713813', 'Giao hàng nhanh. Đúng số lượng Mình đặt lẩu hải sản nhưng shop giao lẩu bò thì phải ko biết do hết hàng hay giao nhầm Sẽ tiếp tục ủng hộ ạ', 'https://cf.shopee.vn/file/8ae70613eca1282f316fca44105d153d_tn', '24712477', null, 20210314, null, null, 35, 0, 'test1', '2021-03-14 02:52:46', null, 5, null, null)| id 1 is updated, time=31

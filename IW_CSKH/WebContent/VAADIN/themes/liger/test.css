@@ -1,0 +1,21 @@
+.bg-red
+{
+	background:#FF0000;
+}
+.bg-green
+{
+	background:#00FF00;
+}
+.bg-blue
+{
+	background:#0000FF;
+}
+.bg-yellow
+{
+	background:yellow;
+}
+.test-no-border
+{
+	border: none;
+}
+

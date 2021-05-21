@@ -1,0 +1,304 @@
+/* @import url(../reindeer/styles.css); */
+/* @import url(pager.css); */
+/* @import url(visible-readonly.css); */
+/* @import url(test.css); */
+/* @import url(login.css); */
+/* @import url(dashboard.css); */
+
+/* Using the old default theme (runo) as the basis for now */
+
+
+.toolbar .v-button {
+	display: block;
+	width: 65px;
+	height: 55px;
+	background: transparent;
+	border: none;
+	text-align: center;
+}
+
+.toolbar .v-button img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+
+.toolbar .v-button span {
+	font-size: x-small;
+	text-shadow: #fafafa 1px 1px 0;
+}
+
+/* .v-app { */
+/*       background: #d0e2ec; */
+/*       font-family: "Lucida Grande", Helvetica, Arial, sans-serif; */
+/*       color: #222; */
+/* } */
+.toolbar {
+	background: url(images/banner_02.png) repeat-x bottom left;
+}
+
+.v-textarea {
+	resize: none;
+	/* 	width: 300px;
+	height: 100px;
+   max-width: 300px; 
+   max-height: 100px; */
+}
+
+.v-select-optiongroup-horizontal .v-select-option {
+	display: inline-block;
+}
+
+.v-table-row-error {
+	color: #FF0000;
+}
+
+.v-table-row-error:hover {
+	color: #00FF00;
+}
+
+.v-table-cell-content-errorFromWhom {
+	font-weight: bold;
+}
+
+.v-tree-node-inactive {
+	color: #FF0000;
+}
+
+.v-tree-node-active {
+	color: #000000;
+}
+
+.table-header-center .v-table-caption-container {
+	text-align: center;
+}
+
+.mca-textfield-right {
+	text-align: right;
+}
+
+.mca-panel-caption .v-panel-caption {
+	font-size: medium;
+	text-align: center;
+	padding: 3px 0px;
+	/* height: 30px; */
+	vertical-align: middle;
+	/* background-color: #FF0000; */
+}
+
+.mca-panel-caption-center .v-panel-caption {
+	text-align: center;
+	padding: 3px 0px;
+}
+
+.v-tree-node.v-tree-node-root {
+	font-weight: bold;
+}
+
+.v-tree-node-children .v-tree-node .v-tree-node-leaf {
+	font-weight: normal;
+}
+
+.mca-normal-node .v-tree-node-leaf {
+	font-weight: normal;
+}
+
+.v-tree-node-no-children {
+	background: none;
+}
+
+.v-tree-node-no-children .v-tree-node-caption {
+	margin-left: 0px;
+}
+
+.mca-enabled {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	cursor: default;
+	color: black;
+}
+
+.mca-enabled .v-textfield.v-disabled {
+	background: none;
+	border: 1px solid #BCBDBE;
+}
+
+.mca-enabled .v-textarea.v-disabled {
+	background: none;
+	border: 1px solid #BCBDBE;
+}
+
+.mca-enabled .v-datefield.v-disabled {
+	background: none;
+	border: 1px solid #BCBDBE;
+	border-radius: 3px;
+}
+
+.mca-enabled .v-datefield.v-disabled .v-textfield {
+	background: none;
+	border: none;
+}
+
+.mca-enabled .v-datefield.v-disabled .v-datefield-button {
+	display: none;
+}
+
+.mca-enabled .v-filterselect.v-disabled {
+	background: none;
+	border: 1px solid #BCBDBE;
+	border-radius: 3px;
+}
+
+.mca-enabled .v-filterselect.v-disabled input {
+	background: none;
+	border: none;
+}
+
+.mca-enabled .v-filterselect.v-disabled .v-filterselect-button {
+	display: none;
+}
+
+/* .mca-readonly .v-textarea.v-readonly,.v-textfield.v-readonly,.v-datefield.v-readonly 
+{
+	background: white;
+	color: red;
+	border: 1px solid #aaa;
+} */
+
+/* input[disabled='disabled'] 
+{
+	color: black;
+} */
+
+/* .mca-disabled .v-disabled .v-formlayout-captioncell .v-caption
+{
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	cursor: default;
+}
+.mca-disabled .v-formlayout .v-disabled
+{
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	cursor: default;
+} */
+/* 
+.v-disabled .v-formlayout-row .v-formlayout-contentcell input
+{
+	background-color: #ffc;
+}
+
+.v-disabled .v-formlayout-row .v-formlayout-contentcell .v-filterselect input
+{
+	background-color: red;
+} */
+
+.v-menubar {
+	background: #D9DBDD url(images/vMenubarBg.jpg) repeat-x top left;
+	/* 	font-weight: bold; */
+	color: #000000;
+	/* 	color: #242426; */
+	text-shadow: none;
+}
+
+.v-menubar :hover {
+	color: #ffffff;
+}
+
+.v-menubar :active {
+	color: #ffffff;
+}
+
+div.v-Notification {
+	background: #003DF5 url(images/error-close-blue.png) no-repeat right top;
+	;
+}
+
+div.v-Notification-system {
+	background: #B40000;
+}
+
+div.v-Notification-error h1 {
+	font-size: larger;
+	/* padding-left: 44px; */
+	background: transparent url(../../img/label-error-icon-big.png)
+		no-repeat 0 50%;
+}
+
+div.v-Notification-error {
+	background: #B40000 url(../reindeer/notification/img/error-close.png)
+		no-repeat right top;
+}
+
+div.v-Notification h1 {
+	font-size: larger;
+	/* background: #003DF5; */
+}
+
+.v-table-caption-container {
+	font-weight: normal;
+	text-transform: none;
+	font-size: 15px;
+	color: black;
+}
+
+.v-menubar .v-menubar-menuitem.v-menubar-menuitem-form-caption {
+	text-align: right;
+}
+
+.v-menubar-menuitem .v-menubar-menuitem-form-caption {
+	width: 150px;
+}
+
+.mca-login-background {
+	background-color: #BBC2BC;
+}
+
+.mca-provisioning-caption {
+	text-align: center;
+}
+
+.v-menubar .v-menubar-menuitem:hover {
+	background: #4d749f repeat-x;
+	background-image: url(images/vertical-sprites.png);
+	-background-image: url(images/vertical-sprites-ie6.png);
+	background-position: left -406px;
+	color: #fff;
+	text-shadow: 0 1px 0 #3b5a7a;
+}
+
+.v-menubar .v-menubar-menuitem.v-menubar-menuitem-form-caption:hover {
+	background: none;
+	color: #000;
+	text-shadow: none;
+}
+
+.v-menubar .v-menubar-menuitem.v-menubar-menuitem-form-caption .v-menubar-menuitem-caption:hover
+	{
+	color: #000;
+}
+
+.gwt-RichTextToolbar {
+	display: none;
+}
+
+.menubarRight {
+	text-align: right;
+	color: #005f8f;
+	font: bold;
+}
+
+.txtMsgContent {
+	width: 100%;
+	height: auto;
+}
+
+.formlayout-notop .v-formlayout-firstrow .v-formlayout-captioncell,.formlayout-notop .v-formlayout-firstrow .v-formlayout-contentcell,.formlayout-notop .v-formlayout-firstrow .v-formlayout-errorcell
+	{
+	padding-top: 0px;
+}
+
+.btnImportPromTemp {
+	margin-left: 78px;
+}

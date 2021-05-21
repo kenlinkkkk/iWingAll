@@ -1,0 +1,118 @@
+@CHARSET "utf-8";
+
+
+.x_tree {
+    font-size: 16px; 
+}
+
+.tblStyle {
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* 
+.tdStyle {
+	width: 300px;
+	color: #00AE1D;
+	font-size: 16px;
+	vertical-align: top;
+	line-height: 15px;
+	padding-top: 4px;
+	font-weight: bold;
+}
+ */
+ 
+.tdIcon {
+	padding: 0px 5px 5px 5px;
+}
+
+.btnLink {
+	color: #0066CC;
+	margin: 2px;
+}
+
+.btnLink .v-button-caption {
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.btnLink .v-button-caption:hover {
+	text-decoration: underline;
+/* 	font-size: 15px; */
+}
+
+.btnLink2 {
+	color: #0066CC;
+	margin: 2px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.btnLink2 .v-button-caption {
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.btnLink2 .v-button-caption:hover {
+	text-decoration: underline;
+/* 	font-size: 16px; */
+/* 	text-align: center; */
+/* 	vertical-align: bottom; */
+}
+
+/* paging */
+
+/* .btnLinkFocus { */
+/* 	color: red; */
+/* 	margin: 2px; */
+/* 	font: bold; */
+/* 	font-weight: bold; */
+/* } */
+
+.btnLinkFocus .v-button-caption {
+	text-decoration: none;
+	font-size: 16px;
+	color: red;
+/* 	font: bold; */
+	font-weight: bold;
+}
+/* 
+.btnLinkFocus .v-button-caption:hover {
+	text-decoration: underline;
+	font-size: 16px;
+	color: red;
+	font: bold;
+} */
+
+.titlePage {
+	color: #1b699f;
+/* 	margin: 2px; */
+	font-size: 18px;
+	font: bold;
+}
+
+.blueLabel {
+	color: #1b699f;
+/* 	margin: 2px; */
+/* 	font-size: 18px; */
+/* 	font: bold; */
+}
+
+
+.pagingStyle {
+	font: bold;
+	background-color: #c2c3c4;
+}
+
+
+.cateDashboard {
+	color: #1b699f;
+	font-size: 16px;
+	font: bold;
+	font-weight: bold;
+}
+
+.validateMsg {
+	color: red;
+}

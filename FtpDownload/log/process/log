@@ -1,0 +1,269 @@
+INFO [2017-03-21 10:51:52,768] - [ConfigsReader.initConfig.72   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2017-03-21 10:51:52,800] - [ConfigsReader.loadFile.28     ] - ================ load config ================
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getListElement.199] - property: ftp_server_info = list elements size = 1
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getList.165    ] - property: time_expression|crond = list has size = 1
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|separator = /
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|ip = 10.54.130.1
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|port = 22
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|user = root
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|pass = sdp@ipec01
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|local_mode = active
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|remote_mode = 
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|connect_timeout = 45000
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|keep_connection = false
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_info|buffer_size = 1024000
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getStringAttr.235] - property(attr): server_info|protocol = sftp
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getListElement.199] - property: folder_mapping|item = list elements size = 1
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: local_path = /ofctmp/cdr/naptheR/
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: server_path = /opt/ducnv/cdr/naptheR
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: copy_local_to = 
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: action_on_server = 
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: move_on_server = 
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: scan_prev = 0
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: file_pattern = .DAT$
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: log_name = IN
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: file_not_match = 
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: extract = true
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: extract_type = zip
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: extract_pass = pass@2015
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 10:51:52,800] - [DocumentParser.getString.67   ] - property: check_instance_port = 8113
+INFO [2017-03-21 10:51:52,800] - [ConfigsReader.loadFile.31     ] - Load config successfully, file = D:\UWorkspace\Elcom\FtpClientMediation\.\config\config.xml
+
+
+INFO [2017-03-21 10:51:52,862] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: main
+INFO [2017-03-21 10:51:52,878] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2017-03-21 10:51:52,878] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+DEBUG [2017-03-21 10:51:52,893] - [UpdateChecker.doCheck.56      ] - Checking for update...
+INFO [2017-03-21 10:51:52,893] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2017-03-21 10:51:52,893] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2017-03-21 10:51:52,893] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2017-03-21 10:51:52,893] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2017-03-21 10:51:52,893] - [JobsMonitor.run.35            ] - Thread-6 is started ...
+INFO [2017-03-21 10:51:52,909] - [FTPIntergration.<init>.35     ] - **************** Init SFTP protocol *****************
+INFO [2017-03-21 10:51:52,925] - [QuartzUtils.start.127         ] - Created schedule: com.ftp.processor.JobScheduler, exps: |*/10 * * * * ?
+INFO [2017-03-21 10:51:52,925] - [AbsApplication.run.72         ] - ============= Application started (v1.3) ==============
+INFO [2017-03-21 10:51:52,925] - [MainApplication$2.run.80      ] - Version: 1.3, JvmMem: 12/105/1726
+INFO [2017-03-21 10:51:53,700] - [UpdateChecker.doCheck.86      ] - New update(s) found: 1.8.5 [http://www.terracotta.org/kit/reflector?kitID=default&pageID=QuartzChangeLog]
+INFO [2017-03-21 14:03:16,686] - [ConfigsReader.initConfig.72   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2017-03-21 14:03:16,718] - [DocumentUtils.parseFileToDoc.96] - Exception: The string "--" is not permitted within comments.
+INFO [2017-03-21 14:03:16,791] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: main
+INFO [2017-03-21 14:03:16,807] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2017-03-21 14:03:16,807] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+DEBUG [2017-03-21 14:03:16,822] - [UpdateChecker.doCheck.56      ] - Checking for update...
+INFO [2017-03-21 14:03:16,822] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2017-03-21 14:03:16,822] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2017-03-21 14:03:16,822] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2017-03-21 14:03:16,823] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2017-03-21 14:03:16,826] - [JobsMonitor.run.35            ] - Thread-6 is started ...
+INFO [2017-03-21 14:03:16,834] - [AbsApplication.run.75         ] - Error when init main class, system exited..., null
+java.lang.NullPointerException
+	at com.ftp.MainApplication.initProcess(MainApplication.java:34)
+	at com.ligerdev.appbase.utils.threads.AbsApplication.run(AbsApplication.java:71)
+INFO [2017-03-21 14:03:17,704] - [UpdateChecker.doCheck.86      ] - New update(s) found: 1.8.5 [http://www.terracotta.org/kit/reflector?kitID=default&pageID=QuartzChangeLog]
+INFO [2017-03-21 14:03:17,841] - [LDInterceptor.run.19          ] - Call the shutdown routine
+INFO [2017-03-21 14:03:17,841] - [MainApplication.endProcess.110] - ======= Exited =======
+INFO [2017-03-21 14:09:10,956] - [ConfigsReader.initConfig.72   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2017-03-21 14:09:10,972] - [DocumentUtils.parseFileToDoc.96] - Exception: The element type "item" must be terminated by the matching end-tag "</item>".
+INFO [2017-03-21 14:09:11,019] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: main
+INFO [2017-03-21 14:09:11,034] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2017-03-21 14:09:11,034] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2017-03-21 14:09:11,034] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2017-03-21 14:09:11,034] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2017-03-21 14:09:11,034] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2017-03-21 14:09:11,034] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2017-03-21 14:09:11,034] - [JobsMonitor.run.35            ] - Thread-6 is started ...
+DEBUG [2017-03-21 14:09:11,050] - [UpdateChecker.doCheck.56      ] - Checking for update...
+INFO [2017-03-21 14:09:11,050] - [AbsApplication.run.75         ] - Error when init main class, system exited..., null
+java.lang.NullPointerException
+	at com.ftp.MainApplication.initProcess(MainApplication.java:34)
+	at com.ligerdev.appbase.utils.threads.AbsApplication.run(AbsApplication.java:71)
+INFO [2017-03-21 14:09:11,925] - [UpdateChecker.doCheck.86      ] - New update(s) found: 1.8.5 [http://www.terracotta.org/kit/reflector?kitID=default&pageID=QuartzChangeLog]
+INFO [2017-03-21 14:09:12,052] - [LDInterceptor.run.19          ] - Call the shutdown routine
+INFO [2017-03-21 14:09:12,052] - [MainApplication.endProcess.110] - ======= Exited =======
+INFO [2017-03-21 14:10:48,303] - [ConfigsReader.initConfig.72   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2017-03-21 14:10:48,335] - [ConfigsReader.loadFile.28     ] - ================ load config ================
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getListElement.199] - property: ftp_server_info = list elements size = 2
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getList.165    ] - property: time_expression|crond = list has size = 1
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|separator = /
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|ip = 190.10.10.12
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|port = 21
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|user = orp
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|pass = vnp@orp123
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|local_mode = active
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|remote_mode = 
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|connect_timeout = 45000
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|keep_connection = false
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_info|buffer_size = 1024000
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getStringAttr.235] - property(attr): server_info|protocol = 
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getListElement.199] - property: folder_mapping|item = list elements size = 8
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/OCG_MO/$time/
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: server_path = /SMS/OCG/MO/$time/
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/OCG_MO/
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: move_on_server = /SMS/OCG/MO/backup/
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: log_name = SMPP
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/OCG_MO/invalid_files/
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,335] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/NOCG_MO/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /SMS/OCG_NEW/MO/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/NOCG_MO/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /SMS/OCG_NEW/MO/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = NSMPP
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/NOCG_MO/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/NOCG_MT/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /SMS/OCG_NEW/MT/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/NOCG_MT/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /SMS/OCG_NEW/MT/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = NSMPP2
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/NOCG_MT/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/NOCG_XML/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /SMS/OCG_NEW/XML/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/NOCG_XML/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /SMS/OCG_NEW/XML/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = NXML
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/NOCG_XML/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/NOCG_XML/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /SMS/OCG_NEW/XML/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/NOCG_XML/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /SMS/OCG_NEW/XML/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = NXML
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/NOCG_XML/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/Portal/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /SMS/PORTAL/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/Portal/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /SMS/PORTAL/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = SMS_POST
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/Portal/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/QTAN/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /ORP/QTAN/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/QTAN/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /ORP/QTAN/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = QTAN
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/QTAN/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_path = /home/vnp_user/data/MMS/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: server_path = /ORP/MMS/$time/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/vnp_user/cdr_ready/MMS/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: move_on_server = /ORP/MMS/backup/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: log_name = MMS
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/MMS/invalid_files/
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,350] - [DocumentParser.getList.165    ] - property: time_expression|crond = list has size = 1
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|separator = /
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|ip = 10.149.3.119
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|port = 22
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|user = eonerate
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|pass = eonerate
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|local_mode = active
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|remote_mode = 
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|connect_timeout = 45000
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|keep_connection = false
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_info|buffer_size = 1024000
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getStringAttr.235] - property(attr): server_info|protocol = 
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getListElement.199] - property: folder_mapping|item = list elements size = 1
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: local_path = /home/eonerate/test/
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: server_path = /$time/
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: copy_local_to = /home/eonerate/result
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: action_on_server = blank
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: move_on_server = /backup/
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: scan_prev = 1
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: date_format = yyyyMMdd
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: file_pattern = 
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: log_name = SDP
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: timeout_download = 60000
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: file_not_match = /home/vnp_user/data/SDP/invalid_files/
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: extract = false
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: extract_type = 
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: extract_pass = 123456
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: local_prefix = test
+INFO [2017-03-21 14:10:48,366] - [DocumentParser.getString.67   ] - property: check_instance_port = 8113
+INFO [2017-03-21 14:10:48,366] - [ConfigsReader.loadFile.31     ] - Load config successfully, file = D:\UWorkspace\Elcom\FtpClientMediation\.\config\config.xml
+
+
+INFO [2017-03-21 14:10:48,413] - [SimpleThreadPool.initialize.267] - Job execution threads will use class loader of thread: main
+INFO [2017-03-21 14:10:48,428] - [SchedulerSignalerImpl.<init>.60] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO [2017-03-21 14:10:48,428] - [QuartzScheduler.<init>.220    ] - Quartz Scheduler v.1.7.3 created.
+INFO [2017-03-21 14:10:48,428] - [RAMJobStore.initialize.139    ] - RAMJobStore initialized.
+INFO [2017-03-21 14:10:48,428] - [StdSchedulerFactory.instantiate.1240] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO [2017-03-21 14:10:48,428] - [StdSchedulerFactory.instantiate.1244] - Quartz scheduler version: 1.7.3
+INFO [2017-03-21 14:10:48,428] - [QuartzScheduler.start.472     ] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO [2017-03-21 14:10:48,428] - [JobsMonitor.run.35            ] - Thread-6 is started ...
+DEBUG [2017-03-21 14:10:48,444] - [UpdateChecker.doCheck.56      ] - Checking for update...
+INFO [2017-03-21 14:10:48,444] - [FTPIntergration.<init>.38     ] - **************** Init FTP protocol *****************
+INFO [2017-03-21 14:10:48,475] - [FTPIntergration.<init>.38     ] - **************** Init FTP protocol *****************
+INFO [2017-03-21 14:10:48,491] - [QuartzUtils.start.127         ] - Created schedule: com.ftp.processor.JobScheduler, exps: |0 * * * * ?
+INFO [2017-03-21 14:10:48,491] - [QuartzUtils.start.127         ] - Created schedule: com.ftp.processor.JobScheduler, exps: |0 * * * * ?
+INFO [2017-03-21 14:10:48,491] - [AbsApplication.run.72         ] - ============= Application started (v1.3) ==============
+INFO [2017-03-21 14:10:48,491] - [MainApplication$2.run.80      ] - Version: 1.3, JvmMem: 15/101/1726
+INFO [2017-03-21 14:10:49,353] - [UpdateChecker.doCheck.86      ] - New update(s) found: 1.8.5 [http://www.terracotta.org/kit/reflector?kitID=default&pageID=QuartzChangeLog]

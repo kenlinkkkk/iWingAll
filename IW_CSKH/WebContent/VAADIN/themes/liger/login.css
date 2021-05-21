@@ -1,0 +1,20 @@
+.txtLoginField {
+	border: 0px none #0d92f6;
+	font-family: Verdana;
+	font-size: 10px;
+	color: red;
+	height: 16px;
+	margin-top: 3px;
+	margin-left: 4px;
+	width: 115px;
+	background-color: transparent;
+	/*padding-top : 1px;*/
+}
+
+.txtLoginField:focus {
+	background-color: transparent;
+}
+
+.loginVLayoutStyle {
+	background: #BBC2BC;
+}

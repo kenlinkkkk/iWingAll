@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <root>
+	    <priority value="info"></priority>
+		<appender-ref ref="ASYNC"/>
+	</root>
+	
+	<appender name="ASYNC" class="org.apache.log4j.AsyncAppender">
+		<appender-ref ref="INFOS" />
+		<appender-ref ref="CONSOLE" />
+	</appender>
+	
+	<category_bak name="CDR_EXPORT" additivity="false">
+		<priority value="info"></priority>
+		<appender-ref ref="CDR_EXPORT_FILE" />
+		<appender-ref ref="CONSOLE" />
+	</category_bak>
+	
+	<!-- 	================================ appenders ================================= -->
+	
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%5p [%d] - [%-30Z{3}] - %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="INFOS" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./logs/api.log" />
+		<param name="DatePattern" value=".yyyyMMdd'.txt'" />
+		<param name="Threshold" value="ALL" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%5p [%d] - [%-30Z{3}] - %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="CDR_EXPORT_FILE" class="com.elc.cdr1.CDRAppender">
+	    <param name="File" value="./logs/cdr.log" />
+		<param name="RolledFileNamePattern" value="log.%d.%i.txt" />
+		
+		<param name="DatePattern" value="yyyyMMddHHmm" />
+		<param name="RolledPeriodMillis" value="300000" />
+		<param name="MaxRecord" value="10000" />
+		
+		<param name="RolledFolderDatePattern" value="yyyyMMdd" />
+		<param name="RolledFilesFolder.bak" value="" />
+		<param name="AutoDeleteEmptyFile" value="true" />
+		
+		<param name="IndexPattern" value="%04d" />
+		<param name="MinIndex" value="0" />
+		<param name="MaxIndex" value="9999" />
+		
+		<param name="Threshold" value="ALL" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout" />
+	</appender>
+	
+	
+	<category name="NEIF_RENEW_NOK" additivity="false">
+		<priority value="info"></priority>
+		<appender-ref ref="NEIF_RENEW_NOK_FILE" />
+		<appender-ref ref="CONSOLE" />
+	</category>
+	
+	<appender name="NEIF_RENEW_NOK_FILE" class="com.elc.cdr1.CDRAppender">
+	    <param name="File" value="./cdr_renew_error/error.writing" />
+		<param name="RolledFileNamePattern" value="error_%d_%i.cdr" />
+		
+		<param name="DatePattern" value="yyyyMMddHHmmss" />
+		<param name="RolledPeriodMillis" value="60000" />
+		<param name="MaxRecord" value="10000" /> 
+		
+		<param name="RolledFolderDatePattern" value="yyyyMMdd" />
+		<param name="RolledFilesFolder" value="./cdr_renew_error" />
+		<param name="AutoDeleteEmptyFile" value="true" />
+		
+		<param name="IndexPattern" value="%04d" />
+		<param name="MinIndex" value="1" />
+		<param name="MaxIndex" value="9999" />
+		
+		<param name="Threshold" value="ALL" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout" />
+	</appender>
+
+</log4j:configuration>

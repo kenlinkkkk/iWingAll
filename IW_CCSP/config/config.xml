@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	
+    <servicename>TingTing</servicename>
+    <servicecode>TingTing</servicecode>
+    
+    <shortcode>9296</shortcode>
+    <cskh_number>02485860616</cskh_number>
+    
+    <username>TINGTING</username>
+    <password>tingting@123</password>
+    
+    <url_send_mt>https://10.3.60.49/mbfn/sb/SOAPRequestServicecps/sendMessage</url_send_mt>
+    <url_mt_remind>https://10.3.60.49/mbfn/sb/SOAPRequestServicecps/exeReceivedCP_MT</url_mt_remind>
+    <url_action_wcc>https://10.3.60.49/mbfn/sb/SOAPRequestServicecps/receiverServiceReq</url_action_wcc>
+    <x_ibm_client_id>53dce9fc-3572-4fe8-a94a-0f5654f7ca5a</x_ibm_client_id>
+    
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

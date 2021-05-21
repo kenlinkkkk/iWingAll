@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+	<menu name="Quản lý Tài khoản" location="danhmuc" value="admin">
+		<item name="Tài khoản người dùng" page="qltk" icon="icons/dashboard/iStar.png" value="admin" tooltip="Tài khoản sử dụng CMS"/>
+		<item name="Lịch sử tác động" page="lstd" icon="icons/dashboard/iStar.png" value="#" tooltip="Lịch sử tác động"/>
+	</menu>
+
+	<menu name="Quản lý QC" location="thuebao" value="">
+		<item name="Link đích" page="definedest" icon="icons/dashboard/iStar.png" value="" tooltip="Quản lý link đích truyền thông"/>
+		<item name="Mã QC" page="maplink" icon="icons/dashboard/iStar.png" value="" />
+		<item name="Thống kê tổng hợp" page="report" icon="icons/dashboard/iStar.png" value="admin" />
+	</menu>
+	
+	<menu name="Quản lý sshweb" location="quanlycuoc" value="supper">
+		<item name="Account" page="xjschacc" icon="icons/dashboard/iStar.png" value="supper" tooltip="Tài khoản XSSHWEB"/>
+		<item name="Service" page="xjschservice" icon="icons/dashboard/iStar.png" value="supper" tooltip="Dịch vụ XSSHWEB"/>
+		<item name="Links" page="xjschlink" icon="icons/dashboard/iStar.png" value="supper" tooltip="LINK XSSHWEB"/>
+		<item name="Rules" page="xjschrule" icon="icons/dashboard/iStar.png" value="supper" tooltip="Rule XSSHWEB"/>
+	</menu>
+	
+	<menu name="Báo cáo" location="baocao" value="#">
+		<item name="Thống kê theo mã" page="chart" icon="icons/dashboard/iStar.png" value="#" />
+		<item name="Thống kê theo ngày" page="cmduser" icon="icons/dashboard/iStar.png" value="#" />
+		<item name="Thống kê theo link" page="cmduser" icon="icons/dashboard/iStar.png" value="#" />
+		<item name="Thống kê theo link" page="cmduser" icon="icons/dashboard/iStar.png" value="#" />
+	</menu>
+	
+</configuration>
+
+<!-- 		<item name="Define link đích" icon="" page="definedest"></item> -->
+<!-- 		<item name="Quản lý mã TT" icon="" page="maplink"></item> -->

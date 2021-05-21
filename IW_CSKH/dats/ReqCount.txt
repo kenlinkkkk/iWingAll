@@ -1,0 +1,4 @@
+#ReqCountManager properties file
+#Mon Jun 03 15:47:24 ICT 2019
+AbsWebApplication=4685
+LoggerListener=0

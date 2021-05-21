@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/commons-net-3.3.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-all-1.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/ligerdev-utils-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.mod.v1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-compress-1.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-vfs2-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gnu-crypto.jar"/>
+	<classpathentry kind="lib" path="lib/unrar-innosystec.jar"/>
+	<classpathentry kind="lib" path="lib/zip4j_1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/jsch-0.1.51-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/jsch-0.1.51-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jsch-0.1.51.jar" sourcepath="lib/jsch-0.1.51-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/FtpClientMediation/lib/jsch-0.1.51-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

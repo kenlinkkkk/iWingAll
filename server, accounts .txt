@@ -1,0 +1,123 @@
+﻿
+ 
+pass root mysql: D4FmKhG5fmdlSp6f
+pass WMVare root/123qweasd
+pass SSH root: 123qweasdASD#@!   (hoặc  123qweasdASD$#@!)  (hoặc: 123qweasd)
+ 
+tk mysql cho các ứng dụng miền app: (schema = vas)
+	tingting/ting2@1234 (tk thường)
+	xroot/xroot123456 (tk full quyền với mọi schema, đang sử dụng cho ứng dụng java) 	
+	
+tk mysql cho web/dmz: game/gamevip2018	schema: ketban_web
+
+   
+// lab - exsi (port1)
+192.168.1.10: APP1
+192.168.1.11: APP2
+192.168.1.12: DMZ1
+192.168.1.13: DMZ3 
+
+// LAN (dây chéo)
+// có trong etc host
+172.16.1.1      APP1
+172.16.1.2      APP2
+172.16.1.3      DMZ1
+172.16.1.4      DMZ2
+
+// IP MBF
+App: 10.54.20.161, 162, 163/ 27 GW: 10.54.20.190
+	 vip = ...163
+	 
+Dmz: 10.54.21.161, 162, 163/ 27 GW: 10.54.21.190
+	 vip = ...163
+	 
+Ip Public: 45.121.26.217
+ 
+  
+
+// port thông app - dmz, hoặc dmz - app (đối với IP MBF, nhưng server cắm dây chéo nên nếu dùng dải 172 thì thông all port)
+8080
+8081 
+ 
+
+Port cho dv (port cắm mạng CMC)
+Sw_Acc_CMC_13: App: G0/35; g0/36
+Sw_Acc_CMC_14: App: G0/35; g0/36
+ 
+
+# link tích hợp CCSP cho MBF
+http://10.54.20.163:8888/ccsp/forwardMessage.jsp?
+http://10.54.20.163:8888/ccsp/updatePackage.jsp?
+
+link report tóm tắt: http://45.121.26.217/ccsp/iwing_pttb.jsp (chi tiết thì xem ở trang CSKH)
+link cskh: http://45.121.26.217/iwcms1/  account: admin/123456Abc
+link truy cập hệ thống: http://45.122.253.185:2010/xauthen/x_remote.jsp account: iwing/iwing2021vspace
+
+// account mắt bão domain 
+MB1565625/Nanova2020
+
+#=========================== mô tả các ứng dụng
+1. api
+    - ý nghĩa: module xử lý đăng ký, hủy, mo, mt, các link api jsp... (ứng dụng chính của dịch vụ)
+	- thư mục chạy: /opt/kns/bin/api
+	- thư mục log: /opt/kns/log/api/
+	- các giao tiếp/nghiệp vụ: giao tiếp ccsp mbf, cấp hàm hủy cho trang cskh, giao tiếp database, quét CDR từ ổ đĩa (module khác lấy từ ccsp về) để quét xử lý lại vào DB...
+	- lệnh start hoặc restart:
+			cd /opt/kns/bin/api
+			./shell.sh restart
+			
+	
+2. emailreport
+  - ý nghĩa: gửi email báo cáo hàng ngày.
+  - thư mục chạy: /opt/kns/bin/emailreport
+  - thư mục log:  /opt/kns/bin/emailreport/log/mailReport/
+  - lệnh start hoặc restart:
+			cd /opt/kns/bin/emailreport
+			./shell.sh restart
+			
+
+3: ftpClient
+	- ý nghĩa: 
+		* là module chuyên kéo file từ FTP/SFTP server về ổ đĩa, cụ thể kéo từ đâu vào đâu thì nằm ở config
+		* với dv này được config get CDR từ CCSP về ổ đĩa, để module api quét CDR xử lý lại những bản ghi chưa có trong DB (nếu khi ccsp call api realtime bị lỗi), lưu CDR ở: /opt/kns/cdr/ccsp/ready/  , khi module api (mục 1)  xử lý xong sẽ move vào /opt/kns/cdr/ccsp/backup/
+	- thư mục chạy: /opt/kns/bin/ftpClient
+	- thư mục log:  /opt/kns/log/ftpclient
+	- lệnh start hoặc restart:
+			cd /opt/kns/bin/ftpClient
+			./shell.sh restart
+		
+4: ftpsynchvasreport
+	- ý nghĩa: là module chuyên đẩy file lên FTP server, cụ thể với dịch vụ này sẽ đẩy file thống kê CTKM lên MBF
+	- thư mục chạy: /opt/kns/bin/ftpsynchvasreport
+	- thư mục log:  /opt/kns/log/ftpvasreport 
+	- lệnh start hoặc restart:
+			cd /opt/kns/bin/ftpsynchvasreport
+			./shell.sh restart
+	
+5: web CSKH
+	- ý nghĩa: cung cấp web cskh, tra cứu , báo cáo doanh thu/sản lượng, hủy dv (chỉ hủy dc gói thường, gói data trên 999 hiện khi call sang MBF bị báo lỗi, chỗ này nếu cần phải nhờ MBF hỗ trợ) ...
+	- thư mục chạy: /opt/kns/bin/tomcatCMS
+	- thư mục log:  /opt/kns/log/cms
+	- lệnh start hoặc restart:
+			cd /opt/kns/bin/api
+			./shell.sh restart
+		
+	- link internet: http://45.121.26.217/iwcms1/  account: admin/123456Abc
+	
+	- link local: http://10.54.20.163:8000/iwcms1/  (VIP) 
+				  http://10.54.20.161:8000/iwcms1/  (APP 1)
+	
+--------------
+lưu ý: với 3 module emailreport, ftpsynchvasreport, ftpClient là những loại module chức năng đóng gói, ko gắn với nghiệp vụ dịch vụ, mọi thay đổi cơ bản thông thường chỉ nằm ở config, kể cả module gửi email report (content, template, địa chỉ, tgian... đều ở config)
+vì vậy source của 3 module này chỉ để tham khảo (chỉ update khi thực sự cần, khi cần update nhớ backup cẩn thận) vì có thể source sẽ mới hơn bản đang chạy, bản source có thể đã có thay đổi config hoặc các lib liên quan.
+===============================================================
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

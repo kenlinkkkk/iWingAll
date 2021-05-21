@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+	<check_instance_port>8114</check_instance_port>
+
+	<ftp_server_info>
+		<time_expression>
+			<crond>40 */5 * * * ?</crond>
+		</time_expression>
+		<server_info protocol="ftp"> <!-- ftp/sftp -->
+			<ip>10.54.9.54</ip>
+			<port>21</port>
+			<user>statusprepaid</user>
+			<pass>statusprepaid123</pass>
+
+			<separator>/</separator>
+			<buffer_size>1024000</buffer_size>
+			<keep_connection>false</keep_connection>
+			<connect_timeout>120000</connect_timeout>
+			<local_mode></local_mode> 		 <!-- passive, active or blank -->
+			<remote_mode>active</remote_mode>     <!-- passive, active or blank -->
+		</server_info>
+		<folder_mapping>
+			<item>
+				<local_prefix></local_prefix>
+				<local_path>/opt/kns/cdr/unreg_cdrvasgate/prepaid/</local_path> <!-- duong dan download ve tren local -->
+				<server_path>/$time</server_path> <!-- duong dan remote tren server -->
+				<copy_local_to>/opt/kns/cdr/unreg_cdrvasgate/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+				<action_on_server></action_on_server> <!-- delete, backup or blank -->
+				<move_on_server></move_on_server> <!-- neu action_on_server=backup, se move vao thu muc nay -->
+				<date_format>yyyyMMdd</date_format> <!-- dinh dang ngay thang luu tru file -->
+				<scan_prev>2</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+				<log_name>IN</log_name> <!-- keyword de log ra voi moi giao dich -->
+				<timeout_download>120000</timeout_download> <!-- timeout download file -->
+				<file_not_match></file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+				<file_pattern><![CDATA[]]>
+				</file_pattern> <!-- dinh nghia file name pattern -->
+				<extract>false</extract> <!-- true or false -->
+				<extract_type>zip</extract_type> <!-- tar/rar/zip -->
+				<extract_pass>pass@2015</extract_pass> <!-- fill password or blank -->
+			</item>
+		</folder_mapping>
+	</ftp_server_info>
+	
+</configuration>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	
+	<check_instance_port>8113</check_instance_port>
+	
+	<ftp_server_info>
+		<time_expression>
+			<crond>0 * * * * ?</crond>
+		</time_expression>
+		
+		<server_info protocol="sftp">
+			<ip>190.10.10.12</ip>	
+			<port>21</port>
+			<user>orp</user>
+			<pass>vnp@orp123</pass>
+			<separator>/</separator>
+			<buffer_size>1024000</buffer_size> 
+			<keep_connection>false</keep_connection>	
+			<connect_timeout>45000</connect_timeout>
+			<local_mode>active</local_mode> <!-- passive, active or blank -->
+			<remote_mode></remote_mode>	<!-- passive, active or blank -->
+		</server_info>
+		
+		<folder_mapping>
+						<item>
+							<local_prefix>test</local_prefix>
+							<local_path>/home/vnp_user/data/OCG_MO/$time/</local_path> <!-- duong dan download ve tren local -->
+							<server_path>/SMS/OCG/MO/$time/</server_path> <!-- duong dan remote tren server -->
+							<copy_local_to>/home/vnp_user/cdr_ready/OCG_MO/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+							<action_on_server>blank</action_on_server>	<!-- delete, backup or blank -->
+							<move_on_server>/SMS/OCG/MO/backup/</move_on_server>	<!-- neu action_on_server=backup, se move vao thu muc nay -->
+							<date_format>yyyyMMdd</date_format> 	<!-- dinh dang ngay thang luu tru file -->
+							<scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+							<log_name>SMPP</log_name>	<!-- keyword de log ra voi moi giao dich -->
+							<timeout_download>60000</timeout_download>	<!-- timeout download file -->
+							<file_not_match>/home/vnp_user/data/OCG_MO/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+							<file_pattern><![CDATA[]]></file_pattern>	<!-- dinh nghia file name pattern -->
+							<extract>false</extract> <!-- true or false -->
+							<extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+							<extract_pass>123456</extract_pass>
+						</item>
+			
+						<item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/NOCG_MO/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/SMS/OCG_NEW/MO/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/NOCG_MO/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/SMS/OCG_NEW/MO/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>NSMPP</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/NOCG_MO/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass> 
+                        </item>
+						
+						 <item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/NOCG_MT/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/SMS/OCG_NEW/MT/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/NOCG_MT/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/SMS/OCG_NEW/MT/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>NSMPP2</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/NOCG_MT/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass>
+                        </item>
+						
+						<item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/NOCG_XML/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/SMS/OCG_NEW/XML/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/NOCG_XML/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/SMS/OCG_NEW/XML/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>NXML</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/NOCG_XML/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass> 
+                        </item>
+						
+						 <item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/NOCG_XML/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/SMS/OCG_NEW/XML/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/NOCG_XML/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/SMS/OCG_NEW/XML/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>NXML</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/NOCG_XML/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass>
+                        </item>
+								
+						<item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/Portal/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/SMS/PORTAL/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/Portal/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/SMS/PORTAL/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>SMS_POST</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/Portal/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass>
+                        </item>
+						
+						<item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/QTAN/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/ORP/QTAN/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/QTAN/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/ORP/QTAN/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>QTAN</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/QTAN/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass>
+                        </item>
+						
+						<item>
+								<local_prefix>test</local_prefix>
+                                <local_path>/home/vnp_user/data/MMS/$time/</local_path> <!-- duong dan download ve tren local -->
+                                <server_path>/ORP/MMS/$time/</server_path> <!-- duong dan remote tren server -->
+                                <copy_local_to>/home/vnp_user/cdr_ready/MMS/</copy_local_to> <!-- sau khi download thanh cong, se copy vao -->
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/ORP/MMS/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>MMS</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/MMS/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass>
+                        </item>
+		</folder_mapping> 
+	 </ftp_server_info>
+ 
+
+	<ftp_server_info>
+                <time_expression>
+                        <crond>0 * * * * ?</crond>
+                </time_expression>
+
+                <server_info>
+                        <ip>10.149.3.119</ip>
+                        <port>22</port>
+                        <user>eonerate</user>
+                        <pass>eonerate</pass>
+						<!--<ip>10.149.34.109</ip>
+                        <port>21</port>
+                        <user>cpis</user>
+                        <pass>cpis123</pass>-->
+                        <separator>/</separator>
+                        <buffer_size>1024000</buffer_size>
+                        <keep_connection>false</keep_connection>
+                        <connect_timeout>45000</connect_timeout>
+                        <local_mode>active</local_mode> <!-- passive, active or blank -->
+                        <remote_mode></remote_mode>     <!-- passive, active or blank -->
+                </server_info>
+
+                <folder_mapping>
+                        <item>
+								<local_prefix>test</local_prefix>
+								<local_path>/home/eonerate/test/</local_path>
+								<copy_local_to>/home/eonerate/result</copy_local_to>
+                                <!--<local_path>/home/vnp_user/data/SDP/$time/</local_path>--> <!-- duong dan download ve tren local -->
+                                <server_path>/$time/</server_path> <!-- duong dan remote tren server --> 
+                                <action_on_server>blank</action_on_server>      <!-- delete, backup or blank -->
+                                <move_on_server>/backup/</move_on_server>    <!-- neu action_on_server=backup, se move vao thu muc nay -->
+                                <date_format>yyyyMMdd</date_format>     <!-- dinh dang ngay thang luu tru file -->
+                                <scan_prev>1</scan_prev> <!-- scan x ngay truoc do den thoi diem hien tai -->
+                                <log_name>SDP</log_name>       <!-- keyword de log ra voi moi giao dich -->
+                                <timeout_download>60000</timeout_download>      <!-- timeout download file -->
+                                <file_not_match>/home/vnp_user/data/SDP/invalid_files/</file_not_match>  <!-- nhung file khong match pattern se download ve thu muc rieng -->
+                                <file_pattern><![CDATA[]]></file_pattern>       <!-- dinh nghia file name pattern -->
+                                <extract>false</extract> <!-- true or false -->
+                                <extract_type></extract_type> <!-- gz, zip, rar, tar or blank  -->
+                                <extract_pass>123456</extract_pass>
+                        </item>
+                </folder_mapping>
+        </ftp_server_info>
+</configuration>

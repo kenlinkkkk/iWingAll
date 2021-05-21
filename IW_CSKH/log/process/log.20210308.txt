@@ -1,0 +1,1 @@
+INFO [2021-03-08 18:59:54,610] - [BaseDAO.handleSql.1979        ] - test$FShopee_hisscore2.main.42, sql=SELECT xdate, sum(value) s FROM clicktook_addscore where xdate >= 20210301 and user_add = 'vinhpt' group by xdate| found 2 records, time=30665

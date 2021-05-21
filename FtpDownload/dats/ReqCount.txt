@@ -1,0 +1,5 @@
+#ReqCountManager properties file
+#Tue Mar 21 14:10:50 ICT 2017
+ScanSchedule=1323
+UploadM14=2
+FTPIntergration=60

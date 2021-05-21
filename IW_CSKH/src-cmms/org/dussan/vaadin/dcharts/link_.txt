@@ -1,0 +1,1 @@
+http://vaadin.dussan.org/dchartsdemo/#waterfallCharts/withCustomColors

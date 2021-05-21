@@ -1,0 +1,2665 @@
+{
+  "item": {
+    "itemid": 3340731928,
+    "price_max_before_discount": 17800000000,
+    "item_status": "normal",
+    "can_use_wholesale": false,
+    "show_free_shipping": true,
+    "estimated_days": 2,
+    "is_hot_sales": null,
+    "is_slash_price_item": false,
+    "upcoming_flash_sale": null,
+    "slash_lowest_price": null,
+    "is_partial_fulfilled": false,
+    "condition": 1,
+    "show_original_guarantee": false,
+    "add_on_deal_info": {
+      "add_on_deal_id": 2222495,
+      "add_on_deal_label": "Mua \u0111\u1ec3 nh\u1eadn qu\u00e0",
+      "sub_type": 1
+    },
+    "is_non_cc_installment_payment_eligible": false,
+    "categories": [
+      {
+        "display_name": "M\u1eb9 & B\u00e9",
+        "catid": 163,
+        "image": null,
+        "no_sub": false,
+        "is_default_subcat": false,
+        "block_buyer_platform": null
+      },
+      {
+        "display_name": "\u0110\u1ed3 d\u00f9ng cho b\u00e9",
+        "catid": 2352,
+        "image": null,
+        "no_sub": false,
+        "is_default_subcat": false,
+        "block_buyer_platform": null
+      },
+      {
+        "display_name": "\u0110\u1ed3 d\u00f9ng ph\u00f2ng ng\u1ee7 c\u1ee7a b\u00e9",
+        "catid": 8802,
+        "image": null,
+        "no_sub": true,
+        "is_default_subcat": false,
+        "block_buyer_platform": null
+      }
+    ],
+    "ctime": 1593745576,
+    "name": "Nh\u1ed9ng Ch\u0169n Gi\u00fap B\u00e9 Ng\u1ee7 Ngon, Qu\u1ea5n Ch\u0169n Cao C\u1ea5p Ch\u00ednh H\u00e3ng KooKoo",
+    "show_shopee_verified_label": true,
+    "size_chart": null,
+    "is_pre_order": false,
+    "service_by_shopee_flag": null,
+    "historical_sold": 19876,
+    "reference_item_id": "",
+    "recommendation_info": null,
+    "bundle_deal_info": null,
+    "price_max": 13500000000,
+    "has_lowest_price_guarantee": true,
+    "shipping_icon_type": 0,
+    "images": [
+      "cdcd78e3203d3b8ead6854e3032c70a2",
+      "570b193ddfc0482b6fe931e3de6f2396",
+      "f686ea716d712bec3e54241db9de7cf1",
+      "c5bdf5e8e7900d6a87c015b52153b499",
+      "0493a4eeb70cc231e0182d0bc9c9a512",
+      "7a4ebd91a6f78b9450b4c084430938bc",
+      "d18c425481b6539a88e94c10ac6eee07",
+      "21f8c8889f70cd822209c46fff4d40f9",
+      "7d3edcc8cf2762d97f0cd0d7026313cc"
+    ],
+    "price_before_discount": 17800000000,
+    "cod_flag": 0,
+    "catid": 163,
+    "is_official_shop": false,
+    "coin_earn_label": null,
+    "hashtag_list": null,
+    "sold": 867,
+    "makeup": null,
+    "item_rating": {
+      "rating_star": 4.959099,
+      "rating_count": [
+        7457,
+        6,
+        18,
+        27,
+        173,
+        7233
+      ],
+      "rcount_with_image": 2699,
+      "rcount_with_context": 3583
+    },
+    "show_official_shop_label_in_title": false,
+    "discount": "34%",
+    "reason": null,
+    "label_ids": [
+      1001041,
+      1001045,
+      1001046,
+      1000753,
+      1001051,
+      1001054,
+      1001061,
+      1001067,
+      1001075,
+      1001077,
+      1001078,
+      1001079,
+      1001084,
+      1001086,
+      1001087,
+      1001089,
+      1000947,
+      1000950,
+      1000961,
+      1000963,
+      1000965,
+      1000969,
+      1000976,
+      1000975,
+      1000979,
+      1000982,
+      1000928,
+      1000987,
+      1000988,
+      1001000,
+      1001001,
+      1001002,
+      1001005,
+      1001012,
+      1001013,
+      1001018,
+      1001031,
+      1001033,
+      1001037,
+      1001038,
+      1001039,
+      1001040,
+      1000533,
+      1000513,
+      1000488,
+      1000594,
+      1000596,
+      1000608,
+      1000609,
+      1000611,
+      1000614,
+      1000619,
+      1000634,
+      44,
+      1000647,
+      1000652,
+      1000660,
+      1000661,
+      1000662,
+      1000670,
+      1000685,
+      1000687,
+      1000696,
+      1000697,
+      1000698,
+      1000700,
+      1000705,
+      1000707,
+      1000709,
+      1000710,
+      1000714,
+      1000715,
+      1000716,
+      1000723,
+      1000724,
+      1000728,
+      1000729,
+      1000738,
+      1000740,
+      1000741,
+      1000744,
+      1000746,
+      1000748,
+      1000749,
+      1000256,
+      1000255,
+      1000257,
+      1000254,
+      1000262,
+      1000258,
+      1000259,
+      1000265,
+      1000266,
+      1000752,
+      1000267,
+      1000270,
+      1000269,
+      1000268,
+      1000272,
+      1000273,
+      1000271,
+      1000274,
+      1000277,
+      1000275,
+      1000276,
+      1000278,
+      1000279,
+      1000260,
+      1000263,
+      1000264,
+      1000764,
+      1000773,
+      1000776,
+      1000775,
+      1000787,
+      1000788,
+      1000790,
+      1000793,
+      1000797,
+      1000804,
+      1000805,
+      1000812,
+      1000813,
+      1000827,
+      1000832,
+      1000838,
+      1000843,
+      1000844,
+      1000847,
+      1000846,
+      1000851,
+      1000854,
+      1000856,
+      1000772,
+      1000769,
+      1000863,
+      1000867,
+      1000870,
+      1000871,
+      1000872,
+      1000873,
+      1000874,
+      1000879,
+      1000891,
+      1000892,
+      1000904,
+      1000911,
+      1000912,
+      1000913,
+      1000917,
+      1000924,
+      1000931,
+      1000937,
+      1000939,
+      1000940,
+      1000941,
+      1000938,
+      1000946,
+      1001320,
+      1001321,
+      1001324,
+      1001351,
+      1001352,
+      1001353,
+      1000560,
+      1000600,
+      1000455,
+      1000643,
+      1000650,
+      1000732,
+      1000735,
+      1000743,
+      1000878,
+      1000951,
+      1000956,
+      1000957,
+      1000966,
+      1000983,
+      1001030,
+      1001060,
+      1001284,
+      1001391,
+      1001388,
+      1001398,
+      1001399,
+      1001390,
+      1001043,
+      1001379,
+      1001409,
+      1001419,
+      1001420,
+      1001418,
+      1001423,
+      1001440,
+      1001583,
+      1001597,
+      1001693,
+      1001711,
+      1001726,
+      1001724,
+      1001727,
+      1001731,
+      1001730,
+      1001733,
+      1001734,
+      1001738,
+      1001740,
+      1001739,
+      1001748,
+      1001760,
+      1001791,
+      1001790,
+      1001813,
+      1001836,
+      1001837,
+      1001827,
+      1001857,
+      1001905,
+      1001904,
+      1001903,
+      1001925,
+      1001946,
+      1001947,
+      1001948,
+      1001953,
+      1001959,
+      1001961,
+      1001968,
+      1002026,
+      1002071,
+      1002105,
+      1002117,
+      1002120,
+      1002129,
+      1002139,
+      1002148,
+      1002160,
+      1002159,
+      1002182,
+      1002181,
+      1002189,
+      1002229,
+      1002255,
+      1002263,
+      1002278,
+      1002282,
+      1002288,
+      1002296,
+      1002300,
+      1002343,
+      1002408,
+      1002409,
+      1002410,
+      1002428,
+      1002433,
+      1002480,
+      1002492,
+      1002580,
+      1002587,
+      1002588,
+      1002594,
+      1002597,
+      1002639,
+      1002645,
+      1002644,
+      1002646,
+      1002648,
+      1002672,
+      1002674,
+      1002683,
+      1002717,
+      1002756,
+      1002763,
+      1002762,
+      1002768,
+      1002770,
+      1002785,
+      1002789,
+      1002790,
+      1002792,
+      1002795,
+      1002835,
+      1002847,
+      1002866,
+      1002868,
+      1002869,
+      1002895,
+      1002898,
+      1002899,
+      1002900,
+      1002901,
+      1002903,
+      1002908,
+      1002909,
+      1002962,
+      1002970,
+      1002990,
+      1002997,
+      1002998,
+      1003002,
+      1003110,
+      1003133,
+      1003159,
+      1003167,
+      1003169,
+      1000742,
+      1002498,
+      1002603,
+      1000512,
+      1003212,
+      1003238,
+      1003239,
+      1003240,
+      1003241,
+      1003258,
+      1003259,
+      1003261,
+      1003262,
+      1003271,
+      1003274,
+      1003275,
+      1003282,
+      1003283,
+      1003288,
+      1000761,
+      1000829,
+      1000836,
+      1000899,
+      1000906,
+      1000930,
+      1000942,
+      1000972,
+      1000986,
+      1001025,
+      1001050,
+      1001082,
+      1001091,
+      1001396,
+      1001545,
+      1001548,
+      1001618,
+      58,
+      1001829,
+      1001831,
+      1001854,
+      1001898,
+      1001966,
+      1000530,
+      1001975,
+      1002072,
+      1002089,
+      1002104,
+      1002110,
+      1002113,
+      1002119,
+      1002136,
+      1002137,
+      1002150,
+      1002223,
+      1002283,
+      1002422,
+      1002494,
+      1002495,
+      1002682,
+      1002695,
+      1001044,
+      1000990,
+      1002822,
+      1002861,
+      1002863,
+      1002945,
+      1002993,
+      1003117,
+      1003118,
+      1003125,
+      1001241,
+      1003233,
+      1003235,
+      1003279,
+      1003280
+    ],
+    "has_group_buy_stock": false,
+    "other_stock": 4037,
+    "deep_discount": null,
+    "attributes": [
+      {
+        "is_pending_qc": false,
+        "idx": 0,
+        "value": "No brand",
+        "id": 13799,
+        "is_timestamp": false,
+        "name": "Th\u01b0\u01a1ng hi\u1ec7u"
+      },
+      {
+        "is_pending_qc": true,
+        "idx": 1,
+        "value": "V\u1ea3i",
+        "id": 13878,
+        "is_timestamp": false,
+        "name": "Ch\u1ea5t li\u1ec7u"
+      },
+      {
+        "is_pending_qc": true,
+        "idx": 2,
+        "value": "C\u00f3",
+        "id": 10673,
+        "is_timestamp": false,
+        "name": "Ch\u1ee9ng nh\u1eadn kh\u00f4ng ch\u1ee9a PVC"
+      },
+      {
+        "is_pending_qc": true,
+        "idx": 3,
+        "value": "C\u00f3",
+        "id": 10674,
+        "is_timestamp": false,
+        "name": "Ch\u1ee9ng nh\u1eadn kh\u00f4ng ch\u1ee9a Ch\u00ec"
+      },
+      {
+        "is_pending_qc": true,
+        "idx": 4,
+        "value": "C\u00f3",
+        "id": 10675,
+        "is_timestamp": false,
+        "name": "Ch\u1ee9ng nh\u1eadn kh\u00f4ng ch\u1ee9a BPA"
+      },
+      {
+        "is_pending_qc": false,
+        "idx": 5,
+        "value": "Vi\u1ec7t Nam",
+        "id": 19969,
+        "is_timestamp": false,
+        "name": "Xu\u1ea5t X\u1ee9"
+      }
+    ],
+    "badge_icon_type": 0,
+    "liked": false,
+    "cmt_count": 7456,
+    "image": "cdcd78e3203d3b8ead6854e3032c70a2",
+    "recommendation_algorithm": null,
+    "is_cc_installment_payment_eligible": false,
+    "shopid": 279841887,
+    "normal_stock": 5488,
+    "video_info_list": [
+      {
+        "duration": 59,
+        "video_id": "6fcfed802e1beb88d996040f2e4ef39f",
+        "version": 1,
+        "thumb_url": "abf69480d42c245752f6e6325954db6f"
+      }
+    ],
+    "installment_plans": null,
+    "view_count": 13972,
+    "voucher_info": null,
+    "current_promotion_has_reserve_stock": true,
+    "liked_count": 3883,
+    "show_official_shop_label": false,
+    "price_min_before_discount": 17800000000,
+    "show_discount": 34,
+    "preview_info": null,
+    "flag": 2,
+    "exclusive_price_info": null,
+    "current_promotion_reserved_stock": 71,
+    "wholesale_tier_list": [
+      
+    ],
+    "group_buy_info": null,
+    "shopee_verified": true,
+    "item_has_post": true,
+    "hidden_price_display": null,
+    "transparent_background_image": "8000bce47055e952c3bc0b9226cab1b6",
+    "welcome_package_info": null,
+    "discount_stock": 1522,
+    "coin_info": {
+      "spend_cash_unit": 100000,
+      "coin_earn_items": [
+        
+      ]
+    },
+    "is_adult": false,
+    "currency": "VND",
+    "raw_discount": 34,
+    "is_preferred_plus_seller": true,
+    "is_category_failed": false,
+    "price_min": 11800000000,
+    "can_use_bundle_deal": false,
+    "cb_option": 0,
+    "brand": "No brand",
+    "stock": 1522,
+    "status": 1,
+    "bundle_deal_id": 0,
+    "is_group_buy_item": null,
+    "description": "Nh\u1ed9ng Ch\u0169n KooKoo \u0110\u00f3ng H\u1ed9p Ch\u00ednh H\u00e3ng\n\ud83d\udc96\u0110\u00d4I L\u1edcI G\u1eecI G\u1eaeM \u0110\u1ebeN BA M\u1eb8 T\u1eea NH\u1ed8NG CH\u0168N KOOKOO\n-Tr\u01b0\u1edbc ti\u00ean Shop c\u1ea3m \u01a1n Ba M\u1eb9 \u0111\u00e3 tin l\u1ef1a ch\u1ecdn Nh\u1ed9ng ch\u0169n KooKoo \u0111\u1ed3ng h\u00e0nh v\u1edbi b\u00e9\n-L\u00e0 M\u1ed9t Ng\u01b0\u1eddi M\u1eb9 Shop mong mu\u1ed1n mang \u0111\u1ebfn s\u1ea3n ph\u1ea9m t\u1ed1t gi\u00e1 th\u00e0nh ph\u00f9 h\u1ee3p nh\u1ea5t \u0111\u1ec3 \u201cCho b\u00e9 y\u00ean gi\u1ea5c \u2013 Cho m\u1eb9 An t\u00e2m\u201d\n-Khi s\u1eed d\u1ee5ng Nh\u1ed9ng ch\u0169n KooKoo B\u00e9 ngoan gi\u1ea5c-m\u1eb9 y\u00ean t\u00e2m th\u00ec \u0111\u1ea5y l\u00e0 ni\u1ec1m vui c\u1ee7a Shop\n-Trong qu\u00e1 tr\u00ecnh ph\u1ee5c v\u1ee5 kh\u00f4ng tr\u00e1nh \u0111\u01b0\u1ee3c sai x\u00f3t t\u1eeb ki\u1ec3m tra, \u0111\u00f3ng h\u00e0ng, v\u1eadn chuy\u1ec3n. N\u1ebfu c\u00f3 b\u1ea5t c\u1ee9 kh\u00f4ng h\u00e0i l\u00f2ng n\u00e0o Ba M\u1eb9 H\u00c3Y NH\u1eaeN TIN ngay cho Shop \u0111\u1ec3 \u0111\u01b0\u1ee3c t\u01b0 v\u1ea5n \u0111\u1ed5i h\u00e0ng, tr\u1ea3 h\u00e0ng \u1ea1\n-N\u1ebfu \u01b0ng \u00fd v\u1ec1 s\u1ea3n ph\u1ea9m Shop nh\u1edd Ba M\u1eb9 \u0111\u00e1nh gi\u00e1 5 Sao \u0111\u1ec3 Shop c\u00f3 th\u00eam \u0111\u1ed9ng l\u1ef1c \u0111\u1ec3 n\u00e2ng cao ph\u1ee5c v\u1ee5 cho c\u00e1c Ba M\u1eb9 v\u00e0 B\u00e9 nha\n\ud83d\udc93G\u1eecI NG\u00c0N Y\u00caU TH\u01af\u01a0NG \u0110\u1ebeN B\u00c9 - SHOP CH\u00c2N TH\u00c0NH C\u1ea2M \u01a0N V\u00c0 CH\u00daC B\u00c9 TH\u1eacT NGOAN \u0110\u1ec2 BA M\u1eb8 Y\u00caN T\u00c2M \ud83d\udc93\n\n\ud83c\udff5NH\u00c3N HI\u1ec6U\n-KooKoo\n-H\u1ed9p K\u00e8m tem ch\u1ed1ng h\u00e0ng gi\u1ea3\n\ud83e\ude80CH\u1ea4T LI\u1ec6U V\u1ea2I\n-85\u201395% s\u1ee3i cotton\n-5-15% s\u1ee3i Spandex\n-Spandex l\u00e0 s\u1ee3i cao c\u1ea5p pha v\u00e0o \u0111\u1ec3 t\u0103ng \u0111\u00e0n h\u1ed3i cho v\u1ea3i m\u00e0 Ko l\u00e0m v\u1ea3i b\u1ecb n\u00f3ng nh\u01b0 s\u1ee3i nylon. Gi\u00e1 s\u1ee3i Spandex \u0111\u1eaft h\u01a1n c\u1ea3 s\u1ee3i Cotton n\u00ean c\u00e1c m\u1eb9 y\u00ean t\u00e2m s\u1ee3i Spandex n\u00e0y nh\u00e9\n\n\ud83d\udccc K\u00cdCH TH\u01af\u1edaC\n-Size S: T\u1eeb 2.5 - 4.5kg \n-Size M: T\u1eeb 4.5 - 6.5kg \n-Size L: T\u1eeb 6.5 - 11 kg\n\n\ud83e\udd4b T\u1ea0I SAO C\u1ea6N S\u1eec D\u1ee4NG NH\u1ed8NG CH\u0168N KOOKOO\n-Khi \u1edf trong b\u1ee5ng m\u1eb9, b\u00e9 quen v\u1edbi kh\u00f4ng gian ch\u1eadt h\u1eb9p, hai tay v\u00e0 ch\u00e2n \u0111\u01b0\u1ee3c gi\u1eef ch\u1eb7t\n-V\u00ec v\u1eady ngay khi b\u00e9 ch\u00e0o \u0111\u1eddi, c\u00e1c b\u00e1c s\u0129 ph\u1ea3i d\u00f9ng t\u00e3 \u0111\u1ec3 qu\u1ea5n ch\u1eb7t b\u00e9 r\u1ed3i m\u1edbi \u1ee7 b\u00e9 ng\u1ee7\n-Khi ra ngo\u00e0i, tay ch\u00e2n b\u00e9 kh\u00f4ng c\u00f2n b\u1ecb gi\u1eef ch\u1eb7t n\u1eefa n\u00ean n\u1ebfu ba m\u1eb9 kh\u00f4ng \u0111\u1ec3 \u00fd gi\u1eef tay ch\u00e2n b\u00e9 th\u00ec b\u00e9 s\u1ebd r\u1ea5t hay gi\u1eadt m\u00ecnh l\u00fac ng\u1ee7\n-B\u00e9 gi\u1eadt m\u00ecnh ng\u1ee7 kh\u00f4ng ngon, kh\u00f4ng \u0111\u1ee7 gi\u1ea5c, hay qu\u1ea5y kh\u00f3c v\u00e0 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn s\u1ee9c kh\u1ecfe c\u1ee7a b\u00e9\n\n\ud83c\udfaf L\u1ee2I \u00cdCH NH\u1ed8NG CH\u0168N KOOKOO\n-Gi\u00fap b\u00e9 ng\u1ee7 ngon h\u01a1n\n-T\u1eadp th\u00f3i quen ng\u1ee7 t\u1ef1 l\u1eadp ngay t\u1eeb l\u00fac ch\u00e0o \u0111\u1eddi cho b\u00e9, t\u1ea1o th\u00f3i quen \u0111\u1ed9c l\u1eadp t\u1ef1 ch\u1ee7 trong sinh ho\u1ea1t\n-Ch\u1ea5t v\u1ea3i cotton m\u1ec1m m\u1ecbn v\u1edbi l\u00e0n da c\u1ee7a b\u00e9\n- Ba m\u1eb9 ch\u0103m b\u00e9 th\u1eadt nh\u1eb9 nh\u00e0ng v\u00e0 nh\u00e0n r\u1ed7i do b\u00e9 ng\u1ee7 ngoan, kh\u1ecfe h\u01a1n, t\u1ef1 l\u1eadp h\u01a1n, kh\u00f4ng qu\u1ea5y kh\u00f3c\n\n\u2728 S\u1eec D\u1ee4NG NH\u1ed8NG CH\u0168N KOOKOO R\u1ea4T TI\u1ec6N L\u1ee2I\n-Nh\u1ed9ng ch\u0169n KooKoo c\u00f3 kh\u00f3a k\u00e9o 2 chi\u1ec1u, m\u1eb9 c\u00f3 th\u1ec3 k\u00e9o kh\u00f3a thay b\u1ec9m m\u00e0 kh\u00f4ng l\u00e0m b\u00e9 t\u1ec9nh gi\u1ea5c\n-Nh\u1ed9ng ch\u0169n KooKoo c\u00f3 thi\u1ebft k\u1ebf \u201cc\u1eeda s\u1ed5\u201d \u0111\u1ec3 m\u1eb9 c\u00f3 th\u1ec3 ki\u1ec3m tra n\u1ebfu c\u00f3 nghi ng\u1edd b\u00e9 \u1ecb\n-Nh\u1ed9ng ch\u0169n KooKoo \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf d\u1ef1a tr\u00ean lo\u1ea1i v\u1ea3i co gi\u00e3n, tho\u00e1ng m\u00e1t, tay b\u00e9 c\u00f3 th\u1ec3 c\u1eed \u0111\u1ed9ng t\u1ef1 do kh\u00f4ng d\u1eadp v\u00e0o m\u1eb7t l\u00e0m t\u1ec9nh gi\u1ea5c\n\n\u23f0 KHI N\u00c0O C\u00d3 TH\u1ec2 S\u1eec D\u1ee4NG NH\u1ed8NG CH\u0168N KOOKOO\n-D\u00f9ng cho b\u00e9 t\u1eeb 6 tu\u1ea7n tr\u1edf l\u00ean, khi b\u00e9 \u0111\u00e3 c\u00f3 th\u1ec3 t\u1ef1 ng\u1ee7\n-C\u00f3 th\u1ec3 d\u00f9ng nh\u1ed9ng ch\u0169n KooKoo thay cho ch\u0103n m\u1ecfng\n-Nh\u1ed9ng ch\u0169n KooKoo c\u00f3 th\u1ec3 d\u00f9ng \u1edf nhi\u1ec7t \u0111\u1ed9 ph\u00f2ng 26\u201327 \u0111\u1ed9\n-Nh\u1ed9ng ch\u0169n KooKoo c\u00f3 th\u1ec3 d\u00f9ng cho b\u00e9 \u0111\u00e3 c\u00f3 th\u00f3i quen gi\u01a1 tay l\u00ean \u0111\u1ea7u khi ng\u1ee7\n\n#KooKoo #ch\u0169nKooKoo #t\u00faing\u1ee7kookoo #qu\u1ea5nch\u0169nkookoo #nh\u1ed9ngch\u0169nkookoo #nh\u1ed9ngng\u1ee7kookoo #qu\u1ea5nch\u0169n #qu\u1ea5nch\u0169nnh\u1ed9ng #ch\u0169nnh\u1ed9ng #ch\u0169nnguKooKoo #easy #quanchunnhong #gi\u1ea5cng\u1ee7chob\u00e9y\u00eau #h\u1ed7tr\u1ee3b\u00e9ng\u1ee7 #quanchun #cocoon #nuoiconkhongphailacuocchien #nuoiconkhoahoc #tungu #rencontungu #t\u00faing\u1ee7chob\u00e9 #t\u00faing\u1ee7 #ch\u0169ncocoon #qu\u1ea5nch\u0169ncocoon #nh\u1ed9ngch\u0169n #t\u00faing\u1ee7cocoon #nh\u1ed9ngng\u1ee7 #ch\u0169nqu\u1ea5ncocoon #qu\u1ea5nch\u0169nchob\u00e9 #qu\u1ea5nch\u0169ntr\u1ebbem #t\u00faing\u1ee7tr\u1ebbem #t\u00faing\u1ee7chob\u00e9s\u01a1sinh #nh\u1ed9ngng\u1ee7chob\u00e9 #nh\u1ed9ngch\u0169nchob\u00e9 #t\u00faing\u1ee7s\u01a1sinh #nh\u1ed9ngqu\u1ea5n #kh\u0103nqu\u1ea5nb\u00e9",
+    "flash_sale": {
+      "itemid": 3340731928,
+      "brand_sale_brand_custom_logo": null,
+      "image": "cdcd78e3203d3b8ead6854e3032c70a2",
+      "shopid": 279841887,
+      "voucher": null,
+      "raw_discount": 34,
+      "price_before_discount": 17800000000,
+      "flash_sale_type": 2,
+      "extra_discount_info": null,
+      "promo_overlay_image": "e4ab0c3bfdf8f3cbf6599421a58ce90f",
+      "modelids": null,
+      "promo_images": [
+        "8000bce47055e952c3bc0b9226cab1b6"
+      ],
+      "price": 11800000000,
+      "promotionid": 2010047507,
+      "start_time": 1614405600,
+      "reminder_count": null,
+      "discount": "34%",
+      "flash_catid": null,
+      "reference_item_id": null,
+      "is_shop_official": null,
+      "flash_sale_stock": 72,
+      "name": "Nh\u1ed9ng Ch\u0169n Gi\u00fap B\u00e9 Ng\u1ee7 Ngon, Qu\u1ea5n Ch\u0169n Cao C\u1ea5p Ch\u00ednh H\u00e3ng KooKoo",
+      "cat_label": 0,
+      "item_type": null,
+      "end_time": 1614412800,
+      "is_shop_preferred": null,
+      "promo_name": null,
+      "stock": 71,
+      "hidden_price_display": null
+    },
+    "models": [
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "01:\u0110\u1ecfTr\u1eafng,Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21154434974,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21154434974,
+            "stockout_time": 1612870736,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            5,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21154434974,
+        "sold": 739,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "01:\u0110\u1ecfTr\u1eafng,Size L: 6 - 11 kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21154434979,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21154434979,
+            "stockout_time": 1612870736,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            5,
+            2
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21154434979,
+        "sold": 696,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "01:\u0110\u1ecfTr\u1eafng,Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21154434989,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21154434989,
+            "stockout_time": 1612870736,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            5,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21154434989,
+        "sold": 245,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "12:K\u1ebb T\u0103m Blue,Size L: 6 - 11 kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916075,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916075,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 145
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 145,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            8,
+            2
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916075,
+        "sold": 659,
+        "stock": 145
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 12,
+        "name": "09:Tr\u1eafngV\u00e0ng,Size M: 4.5-6 Kg ",
+        "promotionid": 2010047507,
+        "price": 11800000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916077,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 11800000000,
+            "promotion_type": 312,
+            "allocated_stock": 12,
+            "shop_id": 279841887,
+            "end_time": 1614412800,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 2010047507,
+            "purchase_limit": null,
+            "start_time": 1614405600,
+            "stock": 12
+          },
+          {
+            "model_id": 21695916077,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 233
+          }
+        ],
+        "current_promotion_has_reserve_stock": true,
+        "currency": "VND",
+        "normal_stock": 233,
+        "extinfo": {
+          "seller_promotion_limit": 0,
+          "has_shopee_promo": true,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            6,
+            1
+          ],
+          "seller_promotion_refresh_time": 1614412800
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916077,
+        "sold": 354,
+        "stock": 12
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "09:Tr\u1eafngV\u00e0ng,Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916079,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916079,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 69
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 69,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            6,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916079,
+        "sold": 122,
+        "stock": 69
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "11:K\u1ebb T\u0103m H\u1ed3ng,Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916080,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916080,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 65
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 65,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            7,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916080,
+        "sold": 169,
+        "stock": 65
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "11:K\u1ebb T\u0103m H\u1ed3ng,Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916081,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916081,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 162
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 162,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            7,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916081,
+        "sold": 456,
+        "stock": 162
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "09:Tr\u1eafngV\u00e0ng,Size L: 6 - 11 kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916082,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916082,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 19
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 19,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            6,
+            2
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916082,
+        "sold": 536,
+        "stock": 19
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "11:K\u1ebb T\u0103m H\u1ed3ng,Size L: 6 - 11 kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916083,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916083,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 179
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 179,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            7,
+            2
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916083,
+        "sold": 483,
+        "stock": 179
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "12:K\u1ebb T\u0103m Blue,Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916085,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916085,
+            "stockout_time": 1613834803,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            8,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916085,
+        "sold": 481,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "12:K\u1ebb T\u0103m Blue,Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21695916088,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21695916088,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 51
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 51,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            8,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21695916088,
+        "sold": 152,
+        "stock": 51
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "14:H\u00ecnh Voi Con(new),Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21846301425,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21846301425,
+            "stockout_time": 1614312395,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            0,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21846301425,
+        "sold": 1403,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "14:H\u00ecnh Voi Con(new),Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21846301426,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21846301426,
+            "stockout_time": 1613635807,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            0,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21846301426,
+        "sold": 378,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "14:H\u00ecnh Voi Con(new),Size L: 6 - 11 kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 21846301427,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 21846301427,
+            "stockout_time": 1614389851,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            0,
+            2
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 21846301427,
+        "sold": 1442,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 12,
+        "name": "02:K\u1ebb Xanh Nh\u1ea1t (new,Size L: 6 - 11 kg",
+        "promotionid": 2010047507,
+        "price": 11800000000,
+        "price_stocks": [
+          {
+            "model_id": 24281600040,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 11800000000,
+            "promotion_type": 312,
+            "allocated_stock": 12,
+            "shop_id": 279841887,
+            "end_time": 1614412800,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 2010047507,
+            "purchase_limit": null,
+            "start_time": 1614405600,
+            "stock": 12
+          },
+          {
+            "model_id": 24281600040,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 641
+          }
+        ],
+        "current_promotion_has_reserve_stock": true,
+        "currency": "VND",
+        "normal_stock": 641,
+        "extinfo": {
+          "seller_promotion_limit": 0,
+          "has_shopee_promo": true,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            9,
+            2
+          ],
+          "seller_promotion_refresh_time": 1614412800
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 24281600040,
+        "sold": 43,
+        "stock": 12
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 12,
+        "name": "02:K\u1ebb Xanh Nh\u1ea1t (new,Size M: 4.5-6 Kg ",
+        "promotionid": 2010047507,
+        "price": 11800000000,
+        "price_stocks": [
+          {
+            "model_id": 24281600041,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 11800000000,
+            "promotion_type": 312,
+            "allocated_stock": 12,
+            "shop_id": 279841887,
+            "end_time": 1614412800,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 2010047507,
+            "purchase_limit": null,
+            "start_time": 1614405600,
+            "stock": 12
+          },
+          {
+            "model_id": 24281600041,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 991
+          }
+        ],
+        "current_promotion_has_reserve_stock": true,
+        "currency": "VND",
+        "normal_stock": 991,
+        "extinfo": {
+          "seller_promotion_limit": 0,
+          "has_shopee_promo": true,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            9,
+            1
+          ],
+          "seller_promotion_refresh_time": 1614412800
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 24281600041,
+        "sold": 47,
+        "stock": 12
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "02:K\u1ebb Xanh Nh\u1ea1t (new,Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 24281600042,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 24281600042,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 260
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 260,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            9,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 24281600042,
+        "sold": 7,
+        "stock": 260
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "17:Ch\u1ed5i s\u01a1n(new),Size L: 6 - 11 kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 61022550094,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 61022550094,
+            "stockout_time": 1614400544,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            1,
+            2
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 61022550094,
+        "sold": 382,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "17:Ch\u1ed5i s\u01a1n(new),Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 61022550096,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 61022550096,
+            "stockout_time": 1612870736,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 0
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 0,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            1,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 61022550096,
+        "sold": 35,
+        "stock": 0
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "17:Ch\u1ed5i s\u01a1n(new),Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 61022550101,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 61022550101,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 4
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 4,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            1,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 61022550101,
+        "sold": 188,
+        "stock": 4
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "19: K\u1ebb H\u1ed3ng(new),Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 71636981212,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 71636981212,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 83
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 83,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            2,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71636981212,
+        "sold": 589,
+        "stock": 83
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "20: K\u1ebb Xanh R\u00eau(new),Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 71636981213,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 71636981213,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 68
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 68,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            3,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71636981213,
+        "sold": 231,
+        "stock": 68
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 11,
+        "name": "19: K\u1ebb H\u1ed3ng(new),Size L: 6 - 11 kg",
+        "promotionid": 2010047507,
+        "price": 11800000000,
+        "price_stocks": [
+          {
+            "model_id": 71636981214,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 11800000000,
+            "promotion_type": 312,
+            "allocated_stock": 12,
+            "shop_id": 279841887,
+            "end_time": 1614412800,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 2010047507,
+            "purchase_limit": null,
+            "start_time": 1614405600,
+            "stock": 11
+          },
+          {
+            "model_id": 71636981214,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 839
+          }
+        ],
+        "current_promotion_has_reserve_stock": true,
+        "currency": "VND",
+        "normal_stock": 839,
+        "extinfo": {
+          "seller_promotion_limit": 0,
+          "has_shopee_promo": true,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            2,
+            2
+          ],
+          "seller_promotion_refresh_time": 1614412800
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71636981214,
+        "sold": 489,
+        "stock": 11
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "20: K\u1ebb Xanh R\u00eau(new),Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 71636981215,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 71636981215,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 113
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 113,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            3,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71636981215,
+        "sold": 543,
+        "stock": 113
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 12,
+        "name": "20: K\u1ebb Xanh R\u00eau(new),Size L: 6 - 11 kg",
+        "promotionid": 2010047507,
+        "price": 11800000000,
+        "price_stocks": [
+          {
+            "model_id": 71636981216,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 11800000000,
+            "promotion_type": 312,
+            "allocated_stock": 12,
+            "shop_id": 279841887,
+            "end_time": 1614412800,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 2010047507,
+            "purchase_limit": null,
+            "start_time": 1614405600,
+            "stock": 12
+          },
+          {
+            "model_id": 71636981216,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 684
+          }
+        ],
+        "current_promotion_has_reserve_stock": true,
+        "currency": "VND",
+        "normal_stock": 684,
+        "extinfo": {
+          "seller_promotion_limit": 0,
+          "has_shopee_promo": true,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            3,
+            2
+          ],
+          "seller_promotion_refresh_time": 1614412800
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71636981216,
+        "sold": 554,
+        "stock": 12
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "19: K\u1ebb H\u1ed3ng(new),Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 71636981217,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 71636981217,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 18
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 18,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            2,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71636981217,
+        "sold": 246,
+        "stock": 18
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 12,
+        "name": "21:K\u1ebbXanh DaTr\u1eddi_NEW,Size L: 6 - 11 kg",
+        "promotionid": 2010047507,
+        "price": 11800000000,
+        "price_stocks": [
+          {
+            "model_id": 71704643423,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 11800000000,
+            "promotion_type": 312,
+            "allocated_stock": 12,
+            "shop_id": 279841887,
+            "end_time": 1614412800,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 2010047507,
+            "purchase_limit": null,
+            "start_time": 1614405600,
+            "stock": 12
+          },
+          {
+            "model_id": 71704643423,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 649
+          }
+        ],
+        "current_promotion_has_reserve_stock": true,
+        "currency": "VND",
+        "normal_stock": 649,
+        "extinfo": {
+          "seller_promotion_limit": 0,
+          "has_shopee_promo": true,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            4,
+            2
+          ],
+          "seller_promotion_refresh_time": 1614412800
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71704643423,
+        "sold": 850,
+        "stock": 12
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "21:K\u1ebbXanh DaTr\u1eddi_NEW,Size S: 2.5-4.5 Kg",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 71704643424,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 71704643424,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 119
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 119,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            4,
+            0
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71704643424,
+        "sold": 273,
+        "stock": 119
+      },
+      {
+        "itemid": 3340731928,
+        "status": 1,
+        "current_promotion_reserved_stock": 0,
+        "name": "21:K\u1ebbXanh DaTr\u1eddi_NEW,Size M: 4.5-6 Kg ",
+        "promotionid": 1227487539,
+        "price": 13500000000,
+        "price_stocks": [
+          {
+            "model_id": 71704643425,
+            "stockout_time": null,
+            "region": "VN",
+            "rebate": null,
+            "price": 13500000000,
+            "promotion_type": 301,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": 1624854600,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 1227487539,
+            "purchase_limit": 100,
+            "start_time": 1609385400,
+            "stock": null
+          },
+          {
+            "model_id": 71704643425,
+            "stockout_time": 0,
+            "region": "VN",
+            "rebate": null,
+            "price": 17800000000,
+            "promotion_type": 0,
+            "allocated_stock": null,
+            "shop_id": 279841887,
+            "end_time": null,
+            "stock_breakdown_by_location": [
+              
+            ],
+            "item_id": 3340731928,
+            "promotion_id": 0,
+            "purchase_limit": null,
+            "start_time": null,
+            "stock": 96
+          }
+        ],
+        "current_promotion_has_reserve_stock": false,
+        "currency": "VND",
+        "normal_stock": 96,
+        "extinfo": {
+          "seller_promotion_limit": 100,
+          "has_shopee_promo": false,
+          "group_buy_info": null,
+          "holiday_mode_old_stock": null,
+          "tier_index": [
+            4,
+            1
+          ],
+          "seller_promotion_refresh_time": 1624854600
+        },
+        "price_before_discount": 17800000000,
+        "modelid": 71704643425,
+        "sold": 708,
+        "stock": 96
+      }
+    ],
+    "has_low_fulfillment_rate": false,
+    "price": 11800000000,
+    "shop_location": "H\u00e0 N\u1ed9i",
+    "tier_variations": [
+      {
+        "images": [
+          "c5098d2a1caaa83bc2d9bc2af508b30d",
+          "af819fedcb4eb638a14c576efe6053ca",
+          "3de821bfd3a704a9a14d8dd04cafcaac",
+          "206a0a03adfac9c8ab201c29045008a4",
+          "e6b3dc250b5a781504b22589f5d6c2e4",
+          "e489e25676766a765fc1245780e1b3a9",
+          "07491160b70860df1b30d60b9c8c0424",
+          "e1fc04b56e73935b5fccc9aafa886976",
+          "6dad8128a6a56901ab0a094fa0f65623",
+          "3f6c817b936ed00694cd324da6b712cf"
+        ],
+        "properties": [
+          
+        ],
+        "type": 0,
+        "name": "M\u1eabu M\u00e3",
+        "options": [
+          "14:H\u00ecnh Voi Con(new)",
+          "17:Ch\u1ed5i s\u01a1n(new)",
+          "19: K\u1ebb H\u1ed3ng(new)",
+          "20: K\u1ebb Xanh R\u00eau(new)",
+          "21:K\u1ebbXanh DaTr\u1eddi_NEW",
+          "01:\u0110\u1ecfTr\u1eafng",
+          "09:Tr\u1eafngV\u00e0ng",
+          "11:K\u1ebb T\u0103m H\u1ed3ng",
+          "12:K\u1ebb T\u0103m Blue",
+          "02:K\u1ebb Xanh Nh\u1ea1t (new"
+        ]
+      },
+      {
+        "images": [
+          
+        ],
+        "properties": [
+          
+        ],
+        "type": 0,
+        "name": "Size",
+        "options": [
+          "Size S: 2.5-4.5 Kg",
+          "Size M: 4.5-6 Kg ",
+          "Size L: 6 - 11 kg"
+        ]
+      }
+    ],
+    "can_use_cod": null,
+    "makeups": null,
+    "welcome_package_type": 0,
+    "show_official_shop_label_in_normal_position": null,
+    "item_type": 0
+  },
+  "version": "7b75d25b472255adec95eaeaf125824f",
+  "data": null,
+  "error_msg": null,
+  "error": null
+}

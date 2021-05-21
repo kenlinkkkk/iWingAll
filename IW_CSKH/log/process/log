@@ -1,0 +1,2 @@
+INFO [2021-03-19 04:42:35,719] - [DBNormalPool.createConn.217   ] - init, create conn OK, pool: main, conn: com.mysql.jdbc.JDBC4Connection@7e0ea639, time: 659
+INFO [2021-03-19 04:42:35,721] - [DBNormalPool.getInstance.343  ] - main, Create db pool, class = com.ligerdev.appbase.utils.db.DBNormalPool

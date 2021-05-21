@@ -1,0 +1,92 @@
+INFO [2016-03-25 07:38:16,358] - [ConfigsReader.initConfig.67   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2016-03-25 07:38:16,374] - [ConfigsReader.loadFile.26     ] - ================ load config ================
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getListElement.139] - property: ftp_server_info = list elements size = 1
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getList.107    ] - property: time_expression|crond = list has size = 1
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|separator = /
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|ip = 124.158.5.112
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|port = 22
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|user = root
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|pass = ligerdev!dev
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|local_mode = active
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|remote_mode = 
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|connect_timeout = 45000
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|keep_connection = false
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_info|buffer_size = 1024000
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getStringAttr.173] - property(attr): server_info|protocol = sftp
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getListElement.139] - property: folder_mapping|item = list elements size = 1
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: local_path = test/upload/
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: server_path = /opt/ligerdev/bin/test/
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: copy_local_to = /u01/input/mobifone/NOKIA_M14/ready/
+INFO [2016-03-25 07:38:16,374] - [DocumentParser.getString.65   ] - property: action_on_server = backup
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: move_on_server = /u01/data_simu/mobifone/NOKIA_M14/backup/
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: scan_prev = 7
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: date_format = yyyyMMdd
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: file_pattern = .DAT$
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: log_name = IN
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: timeout_download = 60000
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: file_not_match = /u01/data/mobifone/NOKIA_M14/invalid_files/
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: extract = true
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: extract_type = zip
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: extract_pass = pass@2015
+INFO [2016-03-25 07:38:16,389] - [DocumentParser.getString.65   ] - property: check_instance_port = 8113
+INFO [2016-03-25 07:38:16,389] - [ConfigsReader.loadFile.29     ] - Load config successfully, file = D:\UWorkspace\Elcom\FtpClientMediation\.\config\config.xml
+
+
+INFO [2016-03-25 07:38:16,405] - [FTPIntergration.<init>.35     ] - **************** Init SFTP protocol *****************
+INFO [2016-03-25 07:38:26,420] - [FTPIntergration.connect.48    ] - M1, ip = 124.158.5.112, port = 22, user = root, pass = ligerdev!dev, localMode = active, bufferSize = 1024000, remoteMode = , timeout =  45000
+INFO [2016-03-25 07:38:26,420] - [FTPIntergration.connect.62    ] - M1, call connect method, protocol = sftp
+INFO [2016-03-25 07:38:26,420] - [FTPIntergration.connect.72    ] - M1, call login method...
+INFO [2016-03-25 07:38:28,364] - [SftpClientImpl$4.execute.97   ] - M1, connect ssh successfully
+INFO [2016-03-25 07:38:28,488] - [SftpClientImpl$4.execute.108  ] - M1, connect sftp successfully
+INFO [2016-03-25 07:38:28,488] - [FTPIntergration.connect.100   ] - M1, connected = true
+INFO [2016-03-25 07:38:40,757] - [FTPIntergration.disconnect.113] - M1, call logout method...
+INFO [2016-03-25 07:38:40,760] - [FTPIntergration.disconnect.115] - M1, logout successfully
+INFO [2016-03-25 07:38:40,760] - [FTPIntergration.disconnect.121] - M1, call disconnect method...
+INFO [2016-03-25 07:38:40,760] - [FTPIntergration.disconnect.123] - M1, disconnect successfully
+INFO [2016-03-25 07:41:12,266] - [ConfigsReader.initConfig.67   ] - Check Xmlconfig level 1, fileName = ./config/config.xml
+INFO [2016-03-25 07:41:12,266] - [ConfigsReader.loadFile.26     ] - ================ load config ================
+INFO [2016-03-25 07:41:12,266] - [DocumentParser.getListElement.139] - property: ftp_server_info = list elements size = 1
+INFO [2016-03-25 07:41:12,266] - [DocumentParser.getList.107    ] - property: time_expression|crond = list has size = 1
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|separator = /
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|ip = 124.158.5.112
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|port = 22
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|user = root
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|pass = ligerdev!dev
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|local_mode = active
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|remote_mode = 
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|connect_timeout = 45000
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|keep_connection = false
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_info|buffer_size = 1024000
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getStringAttr.173] - property(attr): server_info|protocol = sftp
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getListElement.139] - property: folder_mapping|item = list elements size = 1
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: local_path = test/upload/
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: server_path = /opt/ligerdev/bin/test/
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: copy_local_to = /u01/input/mobifone/NOKIA_M14/ready/
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: action_on_server = backup
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: move_on_server = /u01/data_simu/mobifone/NOKIA_M14/backup/
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: scan_prev = 7
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: date_format = yyyyMMdd
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: file_pattern = .DAT$
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: log_name = IN
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: timeout_download = 60000
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: file_not_match = /u01/data/mobifone/NOKIA_M14/invalid_files/
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: extract = true
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: extract_type = zip
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: extract_pass = pass@2015
+INFO [2016-03-25 07:41:12,282] - [DocumentParser.getString.65   ] - property: check_instance_port = 8113
+INFO [2016-03-25 07:41:12,282] - [ConfigsReader.loadFile.29     ] - Load config successfully, file = D:\UWorkspace\Elcom\FtpClientMediation\.\config\config.xml
+
+
+INFO [2016-03-25 07:41:12,282] - [FTPIntergration.<init>.35     ] - **************** Init SFTP protocol *****************
+INFO [2016-03-25 07:41:12,282] - [FTPIntergration.connect.48    ] - M2, ip = 124.158.5.112, port = 22, user = root, pass = ligerdev!dev, localMode = active, bufferSize = 1024000, remoteMode = , timeout =  45000
+INFO [2016-03-25 07:41:12,282] - [FTPIntergration.connect.62    ] - M2, call connect method, protocol = sftp
+INFO [2016-03-25 07:41:12,282] - [FTPIntergration.connect.72    ] - M2, call login method...
+INFO [2016-03-25 07:41:12,876] - [SftpClientImpl$4.execute.97   ] - M2, connect ssh successfully
+INFO [2016-03-25 07:41:12,985] - [SftpClientImpl$4.execute.108  ] - M2, connect sftp successfully
+INFO [2016-03-25 07:41:12,985] - [FTPIntergration.connect.100   ] - M2, connected = true
+INFO [2016-03-25 07:41:14,657] - [UploadM14.main.60             ] - M2, upload success file: ftp_client.jar
+INFO [2016-03-25 07:41:14,772] - [UploadM14.main.60             ] - M2, upload success file: jar.jardesc
+INFO [2016-03-25 07:41:14,772] - [FTPIntergration.disconnect.113] - M2, call logout method...
+INFO [2016-03-25 07:41:14,788] - [FTPIntergration.disconnect.115] - M2, logout successfully
+INFO [2016-03-25 07:41:14,788] - [FTPIntergration.disconnect.121] - M2, call disconnect method...
+INFO [2016-03-25 07:41:14,788] - [FTPIntergration.disconnect.123] - M2, disconnect successfully

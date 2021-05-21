@@ -1,0 +1,3 @@
+<ehcache maxBytesLocalHeap="1g" maxBytesLocalOffHeap="4g" maxBytesLocalDisk="100g" >
+	<cache name="CACHE_BEAN" timeToLiveSeconds="1200" maxElementsInMemory="100000"></cache>
+</ehcache>
