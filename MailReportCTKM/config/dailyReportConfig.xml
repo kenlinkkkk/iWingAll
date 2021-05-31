@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" ?>
+	<properties>
+		<category name="JDBC">
+			<property name="ORA_URL" value="jdbc:oracle:thin:@192.168.6.26:1522/dbof1"/>
+			<property name="ORA_USER" value="mcaoffline"/>
+			<property name="ORA_PWD" value="mcaoffline"/>
+			<property name="ORA_DRIVER" value="oracle.jdbc.driver.OracleDriver"/>
+			<property name="NUM_COMMIT_DB" value="500"/>
+		</category>
+		<category name="MAIL">
+			<property name="SERVLET" value="http://0.0.0.0:4999/emailcontent"/>
+			<property name="TLS" value="true"/>
+			<property name="TIME_2_SEND" value="18"/>
+			<property name="HOST" value="10.151.6.111"/>
+			<property name="PORT" value="25"/>
+			<property name="FROM" value="mca5@vms.com.vn"/>
+			<property name="SUBJECT" value="MCA5 - Báo cáo doanh thu hàng ngày"/>
+			<property name="USER" value="mca5"/>
+			<property name="PASS" value="123456abc"/>
+			<property name="TOs" value="hungnq@elcom.com.vn"/>
+		</category>
+	</properties>

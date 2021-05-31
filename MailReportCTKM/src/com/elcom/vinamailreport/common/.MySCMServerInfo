@@ -1,0 +1,8 @@
+SCMBranch=VASManagement_1.0_VNM
+SCMRepository=VASManagement_1.0_VNM/04.Construction/trunk/Vas Monthly Billing 1.0/src/com/elcom/vasmanagement/vasmonthlybilling/common
+ModuleDefine.java;1535376923;2;1271211305;
+Shell.java;4049061443;2;1271211305;
+GeneratorSeq.java;4073832139;3;1273842671;
+CommonConstants.java;500239153;1;1274605974;
+LockQueue.java;3201510270;1;1274598686;
+ThreadBase.java;2535905161;1;1274598687;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/mail-1.4.5.jar"/>
+	<classpathentry kind="lib" path="lib/MyJConfig.jar"/>
+	<classpathentry kind="lib" path="lib/MyLogger.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/utils_1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-runner-dnv_1.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.mod.v1.6.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-all-1.7.3.jar"/>
+	<classpathentry kind="lib" path="HTMLMailReport.jar"/>
+	<classpathentry kind="lib" path="lib/ligerdev-utils-1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

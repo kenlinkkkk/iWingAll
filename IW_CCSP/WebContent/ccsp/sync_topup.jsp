@@ -1,12 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="com.ligerdev.appbase.utils.db.AntTable" %>
 <%@ page import="java.io.Serializable" %>
-<%@ page import="java.util.Date" %>
 <%@ page import="com.ligerdev.appbase.utils.db.AntColumn" %>
 <%@ page import="com.ligerdev.appbase.utils.db.XBaseDAO" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.ligerdev.appbase.utils.textbase.StringGenerator" %>
 <%@ page import="org.apache.log4j.Logger" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.DateFormat" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.text.ParseException" %>
+<%@ page import="com.xxx.aps.logic.db.orm.Subscriber" %>
 
 
 <%@ page trimDirectiveWhitespaces="true" %>
@@ -15,56 +19,30 @@
 <%
     String transid = "F" + StringGenerator.randomCharacters(5) + "@";
     logger.info(transid + "============ start sync topup ===============");
-    String sqlGetYl = "select * from yl_api_transaction where poup_status=0 order by created_date asc limit 10";
+    String sql = "SELECT * FROM subscriber WHERE active_channel IN ('SMS','AVB') AND STATUS = 1 AND deactive_time IS NULL AND created_time <= last_renew - INTERVAL 72 HOUR AND DATE(created_time) >= '2021-05-21' AND subnote5 IS NULL";
 
-    ArrayList<YlApiTransaction> listYl = xbaseDAO2.getListBySql(transid, YlApiTransaction.class, sqlGetYl, null, null);
-    for (YlApiTransaction ylApiTransaction : listYl) {
+    ArrayList<Subscriber> listSubs = xbaseDAO2.getListBySql(transid, Subscriber.class, sql, null, null);
+    for (Subscriber sub : listSubs) {
         KmtqTopup kmtqTopup = new KmtqTopup();
-        kmtqTopup.setMsisdn("84" + ylApiTransaction.getMsisdn());
-        kmtqTopup.setCreatedTime(ylApiTransaction.getCreatedDate());
+        kmtqTopup.setMsisdn(sub.getMsisdn());
+        kmtqTopup.setCreatedTime(sub.getLastRenew());
         kmtqTopup.setMakeTime(new Date());
-        kmtqTopup.setChannel("Game");
+        kmtqTopup.setChannel(sub.getActiveChannel());
         kmtqTopup.setStatus(0);
-        if(ylApiTransaction.getRewardCode().equals("REWARD_VALUE_20.000_VND")){
-            kmtqTopup.setTopupFee(20000);
-        }
-        if(ylApiTransaction.getRewardCode().equals("REWARD_VALUE_10.000_VND")){
-            kmtqTopup.setTopupFee(10000);
-        }
-        if(ylApiTransaction.getRewardCode().equals("REWARD_VALUE_50.000_VND")){
-            kmtqTopup.setTopupFee(50000);
-        }
-        if(ylApiTransaction.getRewardCode().equals("REWARD_VALUE_100.000_VND")){
-            kmtqTopup.setTopupFee(100000);
-        }
-        if(ylApiTransaction.getRewardCode().equals("REWARD_VALUE_200.000_VND")){
-            kmtqTopup.setTopupFee(200000);
-        }
-        if(ylApiTransaction.getRewardCode().equals("REWARD_VALUE_500.000_VND")){
-            kmtqTopup.setTopupFee(500000);
-        }
-        
+        kmtqTopup.setTopupFee(10000);
         kmtqTopup.setMt("");
-        kmtqTopup.setType(0);
-        kmtqTopup.setCategory("TingTing");
+        kmtqTopup.setType(1);
+        kmtqTopup.setCategory("iMedia");
         kmtqTopup.setPartner(0);
 
         int result = xbaseDAO.insertBean(transid, kmtqTopup);
         if (result != 0) {
-            ylApiTransaction.setPoupStatus(2);
-            xbaseDAO2.updateBean(transid, ylApiTransaction);
+            sub.setSubnote5("CTKM_T6");
+            xbaseDAO.updateBean(transid, sub);
         }
 
-    }
-    int count = 0;
-    for (YlApiTransaction ylApiTransaction : listYl) {
-        if (ylApiTransaction.getPoupStatus() == 2) {
-            count = count + 1;
-        }
     }
     logger.info(transid + "============ end sync topup size: " + listYl.size() + " sync success: " + count + " ===============");
-
-
 %>
 
 

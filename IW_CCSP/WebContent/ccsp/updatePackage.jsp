@@ -187,6 +187,8 @@
                                     "where msisdn = '" + msisdn + "' and package_id = '" + packageCode + "'";
                     ExecuteSQL.queue.put(new SqlBean(transid, sql));
 
+
+
                     // thống kê
                     StatsRscode stats = new StatsRscode(today, "CPS-0000", 1, loadNumber,
                             subs.getActiveChannel(), charge_price, packageCode, "RENEW", subs.getCpid(), "#", "#");
@@ -272,8 +274,8 @@
             String subnote4 = null, subnote5 = null;
 
             // => thường thì sẽ là đăng ký lại nếu giá  > 0 (kịch bản dk lần đầu toàn thấy free)
-            String actionType = charge_price > 0 ? "ReREG" : "FirstREG";
-//            String actionType = "FirstREG";
+//            String actionType = charge_price > 0 ? "ReREG" : "FirstREG";
+            String actionType = "FirstREG";
             String hisnote1 = new SimpleDateFormat("yyyyMMdd").format(new Date());
             String hisnote2 = null, hisnote3 = null;
             int expireint = 0, activeint = 0;
@@ -389,12 +391,23 @@
                         " Mật khẩu là: " + pass + ". Truy cập  http://iwing.vn để tham gia cộng đồng kết bạn bốn phương. Trân trọng cảm ơn.";
                 MtHis passMT = new MtHis(0, msisdn, contentMT, moid, transid, "REG@", new Date(), "SMS");
                 sendSMS1Brandname(transid, passMT, "brandname");
-
-                String contentKM = "(KM) Tuyệt vời! Quý khách được tham gia chương trình khuyến mãi với cơ hội được cộng 10.000đ khi duy trì " +
-                        "liên tiếp gói cước iDating trong vòng 72h (thời gian cộng tiền vào tài khoản từ 14h00 đến 17h59)." +
-                        " Chi tiết truy cập http://iwing.vn  hoặc liên hệ 9090 (200đ/phut).Trân trọng cảm ơn!";
-                MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
-                sendSMS1Brandname(transid, promotionMT, "brandname");
+                if (!isActiveBefore) {
+                    String contentKM = "(KM) Tuyệt vời! Quý khách được tham gia chương trình khuyến mãi với cơ hội được cộng 10.000đ khi duy trì " +
+                            "liên tiếp gói cước iDating trong vòng 72h (thời gian cộng tiền vào tài khoản từ 14h00 đến 17h59)." +
+                            " Chi tiết truy cập http://iwing.vn  hoặc liên hệ 9090 (200đ/phút).Trân trọng cảm ơn!";
+                    MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
+                    sendSMS1Brandname(transid, promotionMT, "brandname");
+                } else {
+                    if (channel.equals("SMS") || channel.equals("AVB")) {
+                        String contentKM = "Rất tiếc! Quý khách đã tham gia CTKM trước đó. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
+                        MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
+                        sendSMS1Brandname(transid, promotionMT, "brandname");
+                    } else {
+                        String contentKM = "Rất tiếc! Quý khách không thuộc đối tượng tham gia CTKM. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
+                        MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
+                        sendSMS1Brandname(transid, promotionMT, "brandname");
+                    }
+                }
             }
 
 
