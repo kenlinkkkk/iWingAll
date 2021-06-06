@@ -50,9 +50,11 @@
 
         //thue bao phat sinh cuoc trong ngay
         String countCharge = "SELECT count(DISTINCT(msisdn)) FROM " +
-                "his_"+ new SimpleDateFormat("yyyyMM").format(date) +" WHERE action in ('FirstREG', 'RENEW') and fee > 0) and hisnote1='"+ new SimpleDateFormat("yyyyMMdd").format(date) +"'";
+                "his_"+ new SimpleDateFormat("yyyyMM").format(date) +" WHERE action in ('FirstREG', 'RENEW') and fee > 0 and hisnote1='"+ new SimpleDateFormat("yyyyMMdd").format(date) +"'";
         Integer subCharge = xbaseDAO.getFirstCell(transid, countCharge, Integer.class);
         reportEffect.setSubCharge(subCharge);
+
+
     }
     rs = reportEffect.toString();
 %>
