@@ -282,9 +282,10 @@
 
             // kiểm tra xem số này đã active gói hay chưa
             Subscriber subs = getSubscriber(transid, msisdn, packageCode);
-
+            boolean sendMTKM = true;
             if (subs != null) {
                 actionType = "ReREG";
+                sendMTKM = false;
                 subnote2 = "" + (BaseUtils.parseInt(subs.getSubnote2(), 0) + charge_price);
                 // subnote3 = "" + (BaseUtils.parseInt(subs.getSubnote3(), 0) + charge_price);
                 subnote3 = "" + (charge_price);
@@ -386,26 +387,28 @@
                 }
                 logger.info(transid + ", respCode => " + value);
 
-                String contentMT = "Quý Khách đã là thành viên của mạng xã hội kết bạn iWing," +
-                        " Quý Khách có 15 phút gọi nội mạng miễn phí mỗi ngày. Mã số kết bạn của QK là " + value + "." +
-                        " Mật khẩu là: " + pass + ". Truy cập  http://iwing.vn để tham gia cộng đồng kết bạn bốn phương. Trân trọng cảm ơn.";
+                String contentMT = "Bạn đã là thành viên của mạng xã hội kết bạn iWing," +
+                        " Hãy cùng trải nghiệm 15 phút gọi nội mạng miễn phí mỗi ngày. Mã số kết bạn của QK là " + value + "." +
+                        " Mật khẩu là: " + pass + ". Truy cập  http://iwing.vn để sử dụng. Trân trọng cảm ơn.";
                 MtHis passMT = new MtHis(0, msisdn, contentMT, moid, transid, "REG@", new Date(), "SMS");
                 sendSMS1Brandname(transid, passMT, "brandname");
-                if (!isActiveBefore) {
-                    String contentKM = "(KM) Tuyệt vời! Quý khách được tham gia chương trình khuyến mãi với cơ hội được cộng 10.000đ khi duy trì " +
-                            "liên tiếp gói cước iDating trong vòng 72h (thời gian cộng tiền vào tài khoản từ 14h00 đến 17h59)." +
-                            " Chi tiết truy cập http://iwing.vn  hoặc liên hệ 9090 (200đ/phút).Trân trọng cảm ơn!";
-                    MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
-                    sendSMS1Brandname(transid, promotionMT, "brandname");
-                } else {
-                    if (channel.equals("SMS") || channel.equals("AVB")) {
-                        String contentKM = "Rất tiếc! Quý khách đã tham gia CTKM trước đó. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
+                if (msisdn.equals("84904554255") || msisdn.equals("84702069793") || msisdn.equals("84902178830")) {
+                    if (sendMTKM) {
+                        String contentKM = "(KM) Tuyệt vời! Quý khách được tham gia chương trình khuyến mãi với cơ hội được cộng 10.000đ khi duy trì " +
+                                "liên tiếp gói cước iDating trong vòng 72h (thời gian cộng tiền vào tài khoản từ 14h00 đến 17h59)." +
+                                " Chi tiết truy cập http://iwing.vn  hoặc liên hệ 9090 (200đ/phút).Trân trọng cảm ơn!";
                         MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
                         sendSMS1Brandname(transid, promotionMT, "brandname");
                     } else {
-                        String contentKM = "Rất tiếc! Quý khách không thuộc đối tượng tham gia CTKM. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
-                        MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
-                        sendSMS1Brandname(transid, promotionMT, "brandname");
+                        if (channel.equals("SMS") || channel.equals("AVB")) {
+                            String contentKM = "Rất tiếc! Quý khách đã tham gia CTKM trước đó. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
+                            MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
+                            sendSMS1Brandname(transid, promotionMT, "brandname");
+                        } else {
+                            String contentKM = "Rất tiếc! Quý khách không thuộc đối tượng tham gia CTKM. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
+                            MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
+                            sendSMS1Brandname(transid, promotionMT, "brandname");
+                        }
                     }
                 }
             }

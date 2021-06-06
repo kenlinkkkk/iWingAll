@@ -17,17 +17,22 @@
 
 
 <%
+    int rs = 0;
     String transid = "F" + StringGenerator.randomCharacters(5) + "@";
     logger.info(transid + "============ start sync topup ===============");
-    String sql = "SELECT * FROM subscriber WHERE active_channel IN ('SMS','AVB') AND STATUS = 1 AND deactive_time IS NULL AND created_time <= last_renew - INTERVAL 72 HOUR AND DATE(created_time) >= '2021-05-21' AND subnote5 IS NULL";
+    String getCTKM  = "SELECT * FROM dm_kmtq where status = 1";
 
-    ArrayList<Subscriber> listSubs = xbaseDAO2.getListBySql(transid, Subscriber.class, sql, null, null);
+    String sql = "SELECT * FROM subscriber WHERE active_channel IN ('SMS','AVB') AND STATUS = 1 AND deactive_time IS NULL AND created_time <= last_renew - INTERVAL 72 HOUR AND DATE(created_time) >= '2021-05-21' AND subnote5 IS NULL";
+//    String sql = "SELECT * FROM subscriber WHERE msisdn in ('84904554255', '84702069793')";
+
+    ArrayList<Subscriber> listSubs = xbaseDAO.getListBySql(transid, Subscriber.class, sql, null, null);
     for (Subscriber sub : listSubs) {
         KmtqTopup kmtqTopup = new KmtqTopup();
         kmtqTopup.setMsisdn(sub.getMsisdn());
         kmtqTopup.setCreatedTime(sub.getLastRenew());
         kmtqTopup.setMakeTime(new Date());
         kmtqTopup.setChannel(sub.getActiveChannel());
+        kmtqTopup.setPromotionType("iMediaMONEY");
         kmtqTopup.setStatus(0);
         kmtqTopup.setTopupFee(10000);
         kmtqTopup.setMt("");
@@ -37,20 +42,22 @@
 
         int result = xbaseDAO.insertBean(transid, kmtqTopup);
         if (result != 0) {
+            rs += 1;
             sub.setSubnote5("CTKM_T6");
             xbaseDAO.updateBean(transid, sub);
         }
 
     }
-    logger.info(transid + "============ end sync topup size: " + listYl.size() + " sync success: " + count + " ===============");
+    logger.info(transid + "============ end sync topup size: " + listSubs.size() + " sync success: " + rs + " ===============");
 %>
 
 
 <%!
 
     private static XBaseDAO xbaseDAO = XBaseDAO.getInstance("main");
-    private static XBaseDAO xbaseDAO2 = XBaseDAO.getInstance("main2");
+//    private static XBaseDAO xbaseDAO2 = XBaseDAO.getInstance("main2");
     private static Logger logger = Logger.getLogger("LOG");
+
 
     @AntTable(catalog = "vas", name = "kmtq", label = "kmtq", key = "id")
     public static class KmtqTopup implements Serializable, Cloneable {
@@ -296,145 +303,5 @@
         }
     }
 
-
-    @AntTable(catalog = "game_api", name = "yl_api_transaction", label = "yl_api_transaction", key = "id")
-    public static class YlApiTransaction implements Serializable, Cloneable {
-
-        private int id;
-        private Date createdDate;
-        private String msisdn;
-        private Integer playedTimes;
-        private String rewardCode;
-        private Float popupValue;
-        private Date poupTime;
-        private Integer poupStatus;
-        private String poupInfo;
-
-        public YlApiTransaction() {
-        }
-
-        public YlApiTransaction(int id, Date createdDate, String msisdn, Integer playedTimes, String rewardCode, Float popupValue, Date poupTime, Integer poupStatus, String poupInfo) {
-            this();
-            this.id = id;
-            this.createdDate = createdDate;
-            this.msisdn = msisdn;
-            this.playedTimes = playedTimes;
-            this.rewardCode = rewardCode;
-            this.popupValue = popupValue;
-            this.poupTime = poupTime;
-            this.poupStatus = poupStatus;
-            this.poupInfo = poupInfo;
-        }
-
-        @AntColumn(name = "id", auto_increment = true, size = 20, label = "id")
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        @AntColumn(name = "id", auto_increment = true, size = 20, label = "id")
-        public int getId() {
-            return this.id;
-        }
-
-        @AntColumn(name = "created_date", size = 19, label = "created_date")
-        public void setCreatedDate(Date createdDate) {
-            this.createdDate = createdDate;
-        }
-
-        @AntColumn(name = "created_date", size = 19, label = "created_date")
-        public Date getCreatedDate() {
-            return this.createdDate;
-        }
-
-        @AntColumn(name = "msisdn", size = 16, label = "msisdn")
-        public void setMsisdn(String msisdn) {
-            this.msisdn = msisdn;
-        }
-
-        @AntColumn(name = "msisdn", size = 16, label = "msisdn")
-        public String getMsisdn() {
-            return this.msisdn;
-        }
-
-        @AntColumn(name = "played_times", size = 20, label = "played_times")
-        public void setPlayedTimes(Integer playedTimes) {
-            this.playedTimes = playedTimes;
-        }
-
-        @AntColumn(name = "played_times", size = 20, label = "played_times")
-        public Integer getPlayedTimes() {
-            return this.playedTimes;
-        }
-
-        @AntColumn(name = "reward_code", size = 255, label = "reward_code")
-        public void setRewardCode(String rewardCode) {
-            this.rewardCode = rewardCode;
-        }
-
-        @AntColumn(name = "reward_code", size = 255, label = "reward_code")
-        public String getRewardCode() {
-            return this.rewardCode;
-        }
-
-        @AntColumn(name = "popup_value", size = 20, label = "popup_value")
-        public void setPopupValue(Float popupValue) {
-            this.popupValue = popupValue;
-        }
-
-        @AntColumn(name = "popup_value", size = 20, label = "popup_value")
-        public Float getPopupValue() {
-            return this.popupValue;
-        }
-
-        @AntColumn(name = "poup_time", size = 19, label = "poup_time")
-        public void setPoupTime(Date poupTime) {
-            this.poupTime = poupTime;
-        }
-
-        @AntColumn(name = "poup_time", size = 19, label = "poup_time")
-        public Date getPoupTime() {
-            return this.poupTime;
-        }
-
-        @AntColumn(name = "poup_status", size = 1, label = "poup_status")
-        public void setPoupStatus(Integer poupStatus) {
-            this.poupStatus = poupStatus;
-        }
-
-        @AntColumn(name = "poup_status", size = 1, label = "poup_status")
-        public Integer getPoupStatus() {
-            return this.poupStatus;
-        }
-
-        @AntColumn(name = "poup_info", size = 255, label = "poup_info")
-        public void setPoupInfo(String poupInfo) {
-            this.poupInfo = poupInfo;
-        }
-
-        @AntColumn(name = "poup_info", size = 255, label = "poup_info")
-        public String getPoupInfo() {
-            return this.poupInfo;
-        }
-
-        @Override
-        public String toString() {
-            return "["
-                    + "id=" + id
-                    + ", createdDate=" + createdDate
-                    + ", msisdn=" + msisdn
-                    + ", playedTimes=" + playedTimes
-                    + ", rewardCode=" + rewardCode
-                    + ", popupValue=" + popupValue
-                    + ", poupTime=" + poupTime
-                    + ", poupStatus=" + poupStatus
-                    + ", poupInfo=" + poupInfo
-                    + "]";
-        }
-
-        @Override
-        public Object clone() throws CloneNotSupportedException {
-            return super.clone();
-        }
-    }
-
 %>
+<%=rs%>

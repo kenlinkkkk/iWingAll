@@ -14,44 +14,34 @@
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="com.google.gson.Gson" %>
+<%@ page import="com.xxx.aps.processor.ExecuteSQL" %>
+<%@ page import="com.xxx.aps.logic.entity.SqlBean" %>
 
 <%
     String rs = "-1";
     String transid = "TOPUP@" + StringGenerator.randomCharacters(5) + "@";
-    DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
-    Map<String, ArrayList<ObjTopup>> mapTopup = new HashMap<String, ArrayList<ObjTopup>>();
-    ArrayList<ObjTopup> listTopup = new ArrayList<ObjTopup>();
-    String sql = "SELECT * FROM kmtq WHERE status = 0";
-    ArrayList<KmtqTopup> listSubsTopup = xbaseDAO.getListBySql(transid, KmtqTopup.class, sql, null, null);
-    Map<String, Object> result = new HashMap<String, Object>();
-    result.put("code", 1);
-    result.put("message", "List Subs topup");
-
-    if (listSubsTopup.size() == 0) {
-        logger.info(transid + ":: response -> null");
-        result.put("data", null);
-    } else {
-        for (KmtqTopup subTopup : listSubsTopup) {
-            ObjTopup obj = new ObjTopup();
-            obj.setId(subTopup.getId());
-            obj.setMsisdn(subTopup.getMsisdn());
-            obj.setTopupType(subTopup.getType());
-            obj.setTopupStatus(subTopup.getStatus());
-            obj.setTopupAmount(String.valueOf(subTopup.getTopupFee()));
-            String strDate = dateFormat.format(subTopup.getCreatedTime());
-            obj.setRegTime(strDate);
-            listTopup.add(obj);
-        }
-        result.put("data", listTopup);
-    }
-
-    Gson gson = new Gson();
-    rs = gson.toJson(result);
+    logger.info(transid + "::begin topup response ======================");
+    String idTopup = request.getParameter("id");
+    String msisdnTopup = request.getParameter("msisdn");
+    String topupStatus = request.getParameter("topup_status");
+    String topupResponse = request.getParameter("topup_response");
+    String topupTime = request.getParameter("topup_time");
+    logger.info(transid + "::Params::id=" + idTopup +":-:msisdn="+ msisdnTopup +":-:status="+ topupStatus +":-:response="+ topupResponse +":-:time="+ topupTime);
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    String kmtqTopup = "Update kmtq set " +
+            "topup_time = '" + dateFormat.format(topupTime) + "'," +
+            "topup_status = " + Integer.parseInt(topupStatus) + "," +
+            "where id = " + Integer.parseInt(idTopup) + ";";
+    String updateSub = "update subscriber set" +
+            "subnote5 = 'topup' where msisdn ='" + msisdnTopup +"' and package_id = 'ID'";
+    ExecuteSQL.queue.put(new SqlBean(transid, updateSub));
+    ExecuteSQL.queue.put(new SqlBean(transid, kmtqTopup));
+    logger.info(transid + "::end topup response ======================");
+    out.print(rs);
 %>
 
 <%!
     private static XBaseDAO xbaseDAO = XBaseDAO.getInstance("main");
-    //    private static XBaseDAO xbaseDAO2 = XBaseDAO.getInstance("main2");
     private static Logger logger = Logger.getLogger("LOG");
 
     class ObjTopup {
@@ -86,6 +76,22 @@
         public void setRegTime(String reg_time)         {       this.reg_time = reg_time;           }
         public String getTopupAmount()                  {       return topup_amount;                }
         public void setTopupAmount(String topup_amount) {       this.topup_amount = topup_amount;   }
+    }
+
+    class TopupResponse {
+        private int id;
+        private int top_status;
+        private String topup_response;
+        private String topup_time;
+
+        public int getId() {    return id;        }
+        public void setId(int id) {this.id = id;        }
+        public int getTop_status() {return top_status;        }
+        public void setTop_status(int top_status) {this.top_status = top_status;        }
+        public String getTopup_response() {return topup_response;        }
+        public void setTopup_response(String topup_response) {this.topup_response = topup_response;        }
+        public String getTopup_time() {return topup_time;        }
+        public void setTopup_time(String topup_time) {this.topup_time = topup_time; }
     }
 
     @AntTable(catalog = "vas", name = "kmtq", label = "kmtq", key = "id")
@@ -332,5 +338,3 @@
         }
     }
 %>
-
-<%=rs%>
