@@ -10,6 +10,7 @@
 <%@ page import="com.google.gson.Gson" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
+<%@ page import="com.xxx.aps.logic.db.orm.Subscriber" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
@@ -35,6 +36,8 @@
     reportEffect.setReportKey(new SimpleDateFormat("yyyyMMdd").format(promotionInfo.getBenginTime()) +"_"+ new SimpleDateFormat("yyyyMMdd").format(promotionInfo.getEndTime()));
     reportEffect.setIsSend(0);
     reportEffect.setStatus(1);
+    reportEffect.setReportDate(date);
+    reportEffect.setReportTime(date);
 
     if (date.after(promotionInfo.getBenginTime()) && date.before(promotionInfo.getEndTime())) {
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(date);
@@ -54,9 +57,35 @@
         Integer subCharge = xbaseDAO.getFirstCell(transid, countCharge, Integer.class);
         reportEffect.setSubCharge(subCharge);
 
+        //thue bao du dk cong thuong
+        String countTopup = "SELECT count(DISTINCT(msisdn)) FROM kmtq WHERE DATE(created_time) ='"+ new SimpleDateFormat("yyyy-MM-dd").format(date) +"'";
+        Integer subTopup = xbaseDAO.getFirstCell(transid, countTopup, Integer.class);
+        reportEffect.setSubCanTopup(subTopup);
 
+        //thue bao da cong thuong
+        String countTopupSuccess = "SELECT count(DISTINCT(msisdn)) FROM kmtq WHERE DATE(created_time) ='"+ new SimpleDateFormat("yyyy-MM-dd").format(date) +"' AND status = 1";
+        Integer subTopupSuc = xbaseDAO.getFirstCell(transid, countTopupSuccess, Integer.class);
+        reportEffect.setSubTopupMoney(subTopupSuc);
+        reportEffect.setSubTopupData(0);
+
+        //thue bao tru cuoc that bai
+        String subChargeFailSql = "SELECT count(DISTINCT(msisdn)) FROM subscriber where subnote5='CTKM_T_C0'";
+        Integer subChargeFail = xbaseDAO.getFirstCell(transid, subChargeFailSql, Integer.class);
+        reportEffect.setSubChargeFail(subChargeFail);
+
+        //thue bao huy truoc khi du dieu kien cong thuong
+        String subCancelSql = "SELECT count(DISTINCT(msisdn)) FROM subscriber where subnote5='CTKM_T_C2'";
+        Integer subCancel = xbaseDAO.getFirstCell(transid, subCancelSql, Integer.class);
+        reportEffect.setSubCancel(subCancel);
     }
-    rs = reportEffect.toString();
+
+    String findSql = "SELECT * FROM report_effect_ctkm where report_date='"+ reportEffect.getReportDate()+"'";
+    ReportEffect rpe = xbaseDAO.getBeanBySql(transid, Subscriber.class, findSql);
+    if (rpe == null) {
+        rs =  xbaseDAO.insertBean(transid, reportEffect);
+    } else {
+        rs = xbaseDAO.updateBean(transid, reportEffect);
+    }
 %>
 
 <%!
@@ -365,6 +394,8 @@
                     '}';
         }
     }
+
+
 %>
 
 <%=rs%>

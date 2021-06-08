@@ -20,9 +20,12 @@
     int rs = 0;
     String transid = "F" + StringGenerator.randomCharacters(5) + "@";
     logger.info(transid + "============ start sync topup ===============");
-    String getCTKM  = "SELECT * FROM dm_kmtq where status = 1";
+    String getCTKM  = "SELECT * FROM dm_ctkm where status = 1";
+    PromotionInfo promotionInfo = xbaseDAO.getBeanBySql(transid, PromotionInfo.class, getCTKM);
 
-    String sql = "SELECT * FROM subscriber WHERE active_channel IN ('SMS','AVB') AND STATUS = 1 AND deactive_time IS NULL AND created_time <= last_renew - INTERVAL 72 HOUR AND DATE(created_time) >= '2021-05-21' AND subnote5 IS NULL";
+    String sql = "SELECT * FROM subscriber WHERE active_channel IN ('SMS','AVB') AND STATUS = 1 AND deactive_time IS NULL AND last_renew is not null and active_time <= now() - INTERVAL 72 HOUR AND subnote5 IS NULL AND " +
+            "created_time between '"+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(promotionInfo.getBenginTime())+"' " +
+            "and '"+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(promotionInfo.getEndTime())+"'";
 //    String sql = "SELECT * FROM subscriber WHERE msisdn in ('84904554255', '84702069793')";
 
     ArrayList<Subscriber> listSubs = xbaseDAO.getListBySql(transid, Subscriber.class, sql, null, null);
@@ -43,11 +46,11 @@
         int result = xbaseDAO.insertBean(transid, kmtqTopup);
         if (result != 0) {
             rs += 1;
-            sub.setSubnote5("CTKM_T6");
+            sub.setSubnote5("CTKM_T6_SUC");
             xbaseDAO.updateBean(transid, sub);
         }
-
     }
+
     logger.info(transid + "============ end sync topup size: " + listSubs.size() + " sync success: " + rs + " ===============");
 %>
 
@@ -303,5 +306,101 @@
         }
     }
 
+    @AntTable(catalog = "vas", name = "dm_ctkm", label = "dm_ctkm", key = "id")
+    public static class PromotionInfo implements Serializable, Cloneable {
+        private int id;
+        private String name;
+        private Date benginTime;
+        private Date endTime;
+        private String category;
+        private String promotionType;
+        private int status;
+        private String content;
+        private int topupFee;
+
+        public PromotionInfo() {
+        }
+
+        public PromotionInfo(int id, String name, Date benginTime, Date endTime, String category, String promotionType, int status, String content, int topupFee) {
+            this.id = id;
+            this.name = name;
+            this.benginTime = benginTime;
+            this.endTime = endTime;
+            this.category = category;
+            this.promotionType = promotionType;
+            this.status = status;
+            this.content = content;
+            this.topupFee = topupFee;
+        }
+
+        @AntColumn(name = "id", auto_increment = true, size = 11, label = "id")
+        public int getId() { return id; }
+
+        @AntColumn(name = "id", auto_increment = true, size = 11, label = "id")
+        public void setId(int id) { this.id = id; }
+
+        @AntColumn(name = "name", label = "id")
+        public String getName() { return name; }
+
+        @AntColumn(name = "name", label = "id")
+        public void setName(String name) { this.name = name; }
+
+        @AntColumn(name = "begin_time", label = "begin_time")
+        public Date getBenginTime() { return benginTime; }
+
+        @AntColumn(name = "begin_time", label = "begin_time")
+        public void setBenginTime(Date benginTime) { this.benginTime = benginTime; }
+
+        @AntColumn(name = "end_time", label = "end_time")
+        public Date getEndTime() { return endTime; }
+
+        @AntColumn(name = "end_time", label = "end_time")
+        public void setEndTime(Date endTime) { this.endTime = endTime; }
+
+        @AntColumn(name = "category", label = "category")
+        public String getCategory() { return category; }
+
+        @AntColumn(name = "category", label = "category")
+        public void setCategory(String category) { this.category = category; }
+
+        @AntColumn(name = "promotion_type", label = "promotion_type")
+        public String getPromotionType() { return promotionType; }
+
+        @AntColumn(name = "promotion_type", label = "promotion_type")
+        public void setPromotionType(String promotionType) { this.promotionType = promotionType; }
+
+        @AntColumn(name = "status", label = "status")
+        public int getStatus() { return status; }
+
+        @AntColumn(name = "status", label = "status")
+        public void setStatus(int status) { this.status = status; }
+
+        @AntColumn(name = "noidung", label = "noidung")
+        public String getContent() { return content; }
+
+        @AntColumn(name = "noidung", label = "noidung")
+        public void setContent(String content) { this.content = content; }
+
+        @AntColumn(name = "topup_fee", label = "topup_fee")
+        public int getTopupFee() { return topupFee; }
+
+        @AntColumn(name = "topup_fee", label = "topup_fee")
+        public void setTopupFee(int topupFee) { this.topupFee = topupFee; }
+
+        @Override
+        public String toString() {
+            return "PromotionInfo{" +
+                    "id=" + id +
+                    ", name='" + name + '\'' +
+                    ", benginTime=" + benginTime +
+                    ", endTime=" + endTime +
+                    ", category='" + category + '\'' +
+                    ", promotionType='" + promotionType + '\'' +
+                    ", status=" + status +
+                    ", content='" + content + '\'' +
+                    ", topupFee=" + topupFee +
+                    '}';
+        }
+    }
 %>
 <%=rs%>

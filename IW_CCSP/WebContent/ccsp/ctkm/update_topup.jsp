@@ -18,7 +18,12 @@
 <%@ page import="com.xxx.aps.logic.entity.SqlBean" %>
 
 <%
-    String rs = "-1";
+    if(request.getParameter("compile") != null){
+        out.print("compile ok, v1.0");
+        return;
+    }
+
+    int rs = -1;
     String transid = "TOPUP@" + StringGenerator.randomCharacters(5) + "@";
     logger.info(transid + "::begin topup response ======================");
     String idTopup = request.getParameter("id");
@@ -27,15 +32,18 @@
     String topupResponse = request.getParameter("topup_response");
     String topupTime = request.getParameter("topup_time");
     logger.info(transid + "::Params::id=" + idTopup +":-:msisdn="+ msisdnTopup +":-:status="+ topupStatus +":-:response="+ topupResponse +":-:time="+ topupTime);
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     String kmtqTopup = "Update kmtq set " +
-            "topup_time = '" + dateFormat.format(topupTime) + "'," +
-            "topup_status = " + Integer.parseInt(topupStatus) + "," +
-            "where id = " + Integer.parseInt(idTopup) + ";";
+            "topup_time =  STR_TO_DATE('"+ topupTime +"', '%Y%m%d%H%i%s'), " +
+            "status = " + Integer.parseInt(topupStatus) + " " +
+            "where id = " + Integer.parseInt(idTopup);
+
+    logger.info(transid + "::Q:: " + kmtqTopup);
+
     String updateSub = "update subscriber set" +
             "subnote5 = 'topup' where msisdn ='" + msisdnTopup +"' and package_id = 'ID'";
-    ExecuteSQL.queue.put(new SqlBean(transid, updateSub));
-    ExecuteSQL.queue.put(new SqlBean(transid, kmtqTopup));
+
+    rs = xbaseDAO.execSql(transid, kmtqTopup);
     logger.info(transid + "::end topup response ======================");
     out.print(rs);
 %>

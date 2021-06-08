@@ -306,7 +306,7 @@
             }
             if (subs == null) {
                 // insert
-
+//                subnote5 = "CTKM_T_C0";
                 subs = new Subscriber(msisdn, new Date(), expireTime, packageCode, activeTime, null,
                         null, channel, null, status, note, cpid, pass,
                         0, subnote1, subnote2, subnote3, subnote4, subnote5);
@@ -507,4 +507,8 @@
     } catch (Exception e) {
         logger.info(transid + ", Exception: " + e.getMessage(), e);
     }
+%>
+
+<%!
+    public class
 %>
