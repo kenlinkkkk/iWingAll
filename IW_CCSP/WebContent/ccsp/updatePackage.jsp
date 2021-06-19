@@ -306,7 +306,9 @@
             }
             if (subs == null) {
                 // insert
-//                subnote5 = "CTKM_T_C0";
+//                if (msisdn.equals("84933299162") || msisdn.equals("84904554255") || msisdn.equals("84932388689") || msisdn.equals("84702069793")) {
+//                    subnote5 = "CTKM_T6";
+//                }
                 subs = new Subscriber(msisdn, new Date(), expireTime, packageCode, activeTime, null,
                         null, channel, null, status, note, cpid, pass,
                         0, subnote1, subnote2, subnote3, subnote4, subnote5);
@@ -392,7 +394,7 @@
                         " Mật khẩu là: " + pass + ". Truy cập  http://iwing.vn để sử dụng. Trân trọng cảm ơn.";
                 MtHis passMT = new MtHis(0, msisdn, contentMT, moid, transid, "REG@", new Date(), "SMS");
                 sendSMS1Brandname(transid, passMT, "brandname");
-                if (msisdn.equals("84904554255") || msisdn.equals("84702069793") || msisdn.equals("84902178830")) {
+//                if (msisdn.equals("84933299162") || msisdn.equals("84904554255") || msisdn.equals("84932388689") || msisdn.equals("84702069793")) {
                     if (sendMTKM) {
                         String contentKM = "(KM) Tuyệt vời! Quý khách được tham gia chương trình khuyến mãi với cơ hội được cộng 10.000đ khi duy trì " +
                                 "liên tiếp gói cước iDating trong vòng 72h (thời gian cộng tiền vào tài khoản từ 14h00 đến 17h59)." +
@@ -410,7 +412,7 @@
                             sendSMS1Brandname(transid, promotionMT, "brandname");
                         }
                     }
-                }
+//                }
             }
 
 
@@ -507,8 +509,4 @@
     } catch (Exception e) {
         logger.info(transid + ", Exception: " + e.getMessage(), e);
     }
-%>
-
-<%!
-    public class
 %>

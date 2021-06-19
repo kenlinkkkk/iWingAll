@@ -21,7 +21,7 @@
     DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
     Map<String, ArrayList<ObjTopup>> mapTopup = new HashMap<String, ArrayList<ObjTopup>>();
     ArrayList<ObjTopup> listTopup = new ArrayList<ObjTopup>();
-    String sql = "SELECT * FROM kmtq WHERE status = 0 and type = 1 and category = 'ikv3'";
+    String sql = "SELECT * FROM kmtq WHERE status = 0 and category = 'ikv3'";
     ArrayList<KmtqTopup> listSubsTopup = xbaseDAO.getListBySql(transid, KmtqTopup.class, sql, null, null);
     Map<String, Object> result = new HashMap<String, Object>();
     result.put("code", 1);

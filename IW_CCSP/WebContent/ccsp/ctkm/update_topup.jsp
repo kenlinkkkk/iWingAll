@@ -31,10 +31,13 @@
     String topupStatus = request.getParameter("topup_status");
     String topupResponse = request.getParameter("topup_response");
     String topupTime = request.getParameter("topup_time");
+    String mt = "Thue bao "+ msisdnTopup +" duoc nap 10000 dong vao tai khoan luc 17-06-2021 09:13:35";
     logger.info(transid + "::Params::id=" + idTopup +":-:msisdn="+ msisdnTopup +":-:status="+ topupStatus +":-:response="+ topupResponse +":-:time="+ topupTime);
 
     String kmtqTopup = "Update kmtq set " +
             "topup_time =  STR_TO_DATE('"+ topupTime +"', '%Y%m%d%H%i%s'), " +
+            "tracenumber = '"+ topupResponse +"'," +
+            "mt = '"+ mt + "'," +
             "status = " + Integer.parseInt(topupStatus) + " " +
             "where id = " + Integer.parseInt(idTopup);
 
