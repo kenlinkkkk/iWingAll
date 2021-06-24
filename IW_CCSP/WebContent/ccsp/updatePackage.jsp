@@ -232,6 +232,7 @@
 
             String cpid = null;
             String groupCpid = null;
+            boolean sendMTKM = true;
             if (channel.equalsIgnoreCase("CP")) {
                 channel = "SMS";
             }
@@ -260,9 +261,18 @@
             if (listDay.contains(dayNow)) {
                 channel = "AVB";
                 groupCpid = "AVB";
+                sendMTKM = false;
                 logger.info(transid + " regAvb msisdn:" + msisdn);
             }
 
+            if(commandCode.equalsIgnoreCase("KM ID ID")) {
+                channel = "AVB";
+                sendMTKM = false;
+            }
+
+            if (!commandCode.equalsIgnoreCase("DK ID")) {
+                sendMTKM = false;
+            }
 
             String note = null;
             Date expireTime = BaseUtils.parseTime(format, expireDatetime);
@@ -282,7 +292,7 @@
 
             // kiểm tra xem số này đã active gói hay chưa
             Subscriber subs = getSubscriber(transid, msisdn, packageCode);
-            boolean sendMTKM = true;
+
             if (subs != null) {
                 actionType = "ReREG";
                 sendMTKM = false;
@@ -389,9 +399,9 @@
                 }
                 logger.info(transid + ", respCode => " + value);
 
-                String contentMT = "Bạn đã là thành viên của mạng xã hội kết bạn iWing," +
-                        " Hãy cùng trải nghiệm 15 phút gọi nội mạng miễn phí mỗi ngày. Mã số kết bạn của QK là " + value + "." +
-                        " Mật khẩu là: " + pass + ". Truy cập  http://iwing.vn để sử dụng. Trân trọng cảm ơn.";
+                String contentMT = "Quý Khách đã là thành viên của mạng xã hội kết bạn iWing," +
+                        " Quý Khách có 15 phút gọi nội mạng miễn phí mỗi ngày. Mã số kết bạn của QK là " + value + "." +
+                        " Mật khẩu là: " + pass + ". Truy cập  http://iwing.vn để tham gia cộng đồng kết bạn bốn phương. Trân trọng cảm ơn.";
                 MtHis passMT = new MtHis(0, msisdn, contentMT, moid, transid, "REG@", new Date(), "SMS");
                 sendSMS1Brandname(transid, passMT, "brandname");
 //                if (msisdn.equals("84933299162") || msisdn.equals("84904554255") || msisdn.equals("84932388689") || msisdn.equals("84702069793")) {
@@ -401,13 +411,9 @@
                                 " Chi tiết truy cập http://iwing.vn  hoặc liên hệ 9090 (200đ/phút).Trân trọng cảm ơn!";
                         MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
                         sendSMS1Brandname(transid, promotionMT, "brandname");
-                    } else {
-                        if (channel.equals("SMS") || channel.equals("AVB")) {
+                    } else if ("DK ID".equalsIgnoreCase(commandCode)) {
+                        if (channel.equals("SMS")) {
                             String contentKM = "Rất tiếc! Quý khách đã tham gia CTKM trước đó. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
-                            MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
-                            sendSMS1Brandname(transid, promotionMT, "brandname");
-                        } else {
-                            String contentKM = "Rất tiếc! Quý khách không thuộc đối tượng tham gia CTKM. Chi tiết liên hệ 9090 (200đ/phút). Trân trọng cám ơn!";
                             MtHis promotionMT = new MtHis(0, msisdn, contentKM, moid, transid, "REG@", new Date(), "SMS");
                             sendSMS1Brandname(transid, promotionMT, "brandname");
                         }

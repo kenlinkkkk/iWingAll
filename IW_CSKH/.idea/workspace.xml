@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="169ae3ff-dafb-45ca-af79-d04a0e7548fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../IW_CCSP/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IW_CCSP/IW_CCSP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../IW_CCSP/IW_CCSP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/sync_topup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/sync_topup.jsp.off" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/ctkm/update_topup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/ctkm/update_topup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/unregister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/unregister.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/updatePackage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../IW_CCSP/WebContent/ccsp/updatePackage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MailReportCTKM/bin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../MailReportCTKM/bin/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622396469232</updated>
       <workItem from="1622396470405" duration="26000" />
+      <workItem from="1624520732386" duration="682000" />
     </task>
     <servers />
   </component>

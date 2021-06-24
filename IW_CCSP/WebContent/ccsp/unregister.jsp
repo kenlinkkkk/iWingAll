@@ -63,7 +63,7 @@
 //    }
     String a = "";
     if (pkgcode.contains("id")||pkgcode.contains("ID")) {
-        a = unRegMsisdn(transid, msisdn, "999", "HUYCSP " + pkgcode, pkgcode, "");
+        a = unRegMsisdn(transid, msisdn, "5270", "HUYCSP " + pkgcode, pkgcode, "");
     } else {
         a = actionWCC(transid, msisdn, "HUY " + pkgcode, pkgcode, "");
     }

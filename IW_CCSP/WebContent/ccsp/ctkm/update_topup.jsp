@@ -31,7 +31,7 @@
     String topupStatus = request.getParameter("topup_status");
     String topupResponse = request.getParameter("topup_response");
     String topupTime = request.getParameter("topup_time");
-    String mt = "Thue bao "+ msisdnTopup +" duoc nap 10000 dong vao tai khoan luc 17-06-2021 09:13:35";
+    String mt = "Thue bao "+ msisdnTopup +" duoc nap 10000 dong vao tai khoan";
     logger.info(transid + "::Params::id=" + idTopup +":-:msisdn="+ msisdnTopup +":-:status="+ topupStatus +":-:response="+ topupResponse +":-:time="+ topupTime);
 
     String kmtqTopup = "Update kmtq set " +
@@ -54,7 +54,11 @@
 <%!
     private static XBaseDAO xbaseDAO = XBaseDAO.getInstance("main");
     private static Logger logger = Logger.getLogger("LOG");
+    public static String formatDate(String dateStr) throws ParseException {
+        Date date = new SimpleDateFormat("yyyyMMddHHmmss").parse(dateStr);
 
+        return new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(date);
+    }
     class ObjTopup {
         private int id;
         private String msisdn;
