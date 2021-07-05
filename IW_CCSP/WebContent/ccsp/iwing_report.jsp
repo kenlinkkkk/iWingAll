@@ -56,35 +56,37 @@
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='ID' then 1 else 0 end), 0) reg_id, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='TK' then 1 else 0 end), 0) reg_tk, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='DK ID' then 1 else 0 end), 0) reg_dkid, " +
-              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='KT' then 1 else 0 end), 0) reg_kt, " +
+              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid in ('DK TK', 'KT') then 1 else 0 end), 0) reg_kt, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='KM ID ID' then 1 else 0 end), 0) reg_avb, " +
+              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid in ('ID', 'TK', 'DK ID', 'KT', 'DK TK', 'KM ID ID') then 1 else 0 end), 0) reg_total, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
-              "from his_202106 where action in ('FirstREG','ReREG') and cpid='ID' and date(created_time) = date(DATE_ADD(now(),INTERVAL -1 day))) then 1 else 0 end),0) unreg_id_24h, " +
+              "from his_"+month+" where action in ('FirstREG','ReREG') and cpid='ID' and date(created_time) = date(DATE_ADD(a.created_time,INTERVAL -1 day))) then 1 else 0 end),0) unreg_id_24h, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
-              "from his_202106 where action in ('FirstREG','ReREG') and cpid='TK' and date(created_time) = date(DATE_ADD(now(),INTERVAL -1 day))) then 1 else 0 end),0) unreg_tk_24h, " +
+              "from his_"+month+" where action in ('FirstREG','ReREG') and cpid='TK' and date(created_time) = date(DATE_ADD(a.created_time,INTERVAL -1 day))) then 1 else 0 end),0) unreg_tk_24h, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
-              "from his_202106 where action in ('FirstREG','ReREG') and cpid='DK ID' and date(created_time) = date(DATE_ADD(now(),INTERVAL -1 day))) then 1 else 0 end),0) unreg_dkid_24h, " +
+              "from his_"+month+" where action in ('FirstREG','ReREG') and cpid='DK ID' and date(created_time) = date(DATE_ADD(a.created_time,INTERVAL -1 day))) then 1 else 0 end),0) unreg_dkid_24h, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
-              "from his_202106 where action in ('FirstREG','ReREG') and cpid='KT' and date(created_time) = date(DATE_ADD(now(),INTERVAL -1 day))) then 1 else 0 end),0) unreg_kt_24h, " +
+              "from his_"+month+" where action in ('FirstREG','ReREG') and cpid in ('DK TK', 'KT') and date(created_time) = date(DATE_ADD(a.created_time,INTERVAL -1 day))) then 1 else 0 end),0) unreg_kt_24h, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
-              "from his_202106 where action in ('FirstREG','ReREG') and cpid='KM ID ID' and date(created_time) = date(DATE_ADD(now(),INTERVAL -1 day))) then 1 else 0 end),0) unreg_avb_24h, " +
+              "from his_"+month+" where action in ('FirstREG','ReREG') and cpid='KM ID ID' and date(created_time) = date(DATE_ADD(a.created_time,INTERVAL -1 day))) then 1 else 0 end),0) unreg_avb_24h, " +
+              "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
+              "from his_"+month+" where action in ('FirstREG', 'ReREG') and cpid in ('ID', 'TK', 'DK ID','KT', 'DK TK', 'KM ID ID') and date(created_time) = date(date_add(a.created_time, interval -1 day))) then 1 else 0 end), 0) unreg_total, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='ID' then fee else 0 end), 0) quantity_reg_id, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='TK' then fee else 0 end), 0) quantity_reg_tk, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='DK ID' then fee else 0 end), 0) quantity_reg_dkid, " +
-              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='KT' then fee else 0 end), 0) quantity_reg_kt, " +
-              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='KM ID ID' then fee else 0 end), 0) quantity_avb, " +
+              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid in ('DK TK', 'KT') then fee else 0 end), 0) quantity_reg_kt, " +
+              "COALESCE(sum(case when action not in ('UNREG') and msisdn in (select distinct(msisdn) from his_"+month+" where cpid='KM ID ID' and date(created_time) = date(date_add(a.created_time, interval -1 day))) then fee else 0 end), 0) quantity_avb, " +
               "COALESCE(sum(case when action not in ('UNREG') then fee else 0 end),0) total " +
-              "" +
-              "from his_202106 where action in ('FirstREG', 'ReREG') group by NGAY order by NGAY desc";
+              "from his_"+month+" a group by NGAY order by NGAY desc";
 
       String unit = request.getParameter("unit");
       data = baseDAO.getDataTableStr("", sql, null, null);
 
-      String header = "<th colspan='18'>" + serviceName + "</th>";
-      header += "<tr class='text-center'><td rowspan='3'>Ngày</td><td colspan='5'>TB đăng ký</td><td colspan='5'>TB hủy (24h)</td><td colspan='5'>Doanh thu khách hàng</td><td rowspan='3'>Tổng doanh thu</td><td rowspan='3'>Doanh thu lũy kế</td></tr>\n" +
-              "\t<tr class='text-center'><td colspan='2'>LiveInfo ads</td><td>SMS 090</td><td>Nanova</td><td>AVB</td><td colspan='2'>LiveInfo ads</td><td>SMS 090</td><td>Nanova</td><td>AVB</td><td colspan='2'>LiveInfo ads</td><td>SMS 090</td><td>Nanova</td><td>AVB</td></tr>\n" +
-              "\t<tr class='text-center'><td>ID</td><td>TK</td><td>DK ID</td><td>KT</td><td>KM ID</td><td>ID</td><td>TK</td><td>DK ID</td><td>KT</td><td>KM ID</td><td>ID</td><td>TK</td><td>DK ID</td><td>KT</td><td>KM ID</td></tr>";
-      reportWAP = showTable1("", logger, data, header, listDate, unit, "reg_id", "reg_tk", "reg_dkid", "reg_kt", "reg_avb", "unreg_id_24h", "unreg_tk_24h", "unreg_dkid_24h", "unreg_kt_24h", "unreg_avb_24h", "quantity_reg_id", "quantity_reg_tk","quantity_reg_dkid", "quantity_reg_kt", "quantity_avb", "total");
+      String header = "<th colspan='20'>" + serviceName + "</th>";
+      header += "<tr class='text-center'><th rowspan='3'>Ngày</th><th colspan='5'>TB đăng ký</th><th rowspan='3'>Tổng ĐK</th><th colspan='5'>TB hủy (24h)</th><th rowspan='3'>Tổng hủy</th><th colspan='5'>Doanh thu khách hàng</th><th rowspan='3'>Tổng doanh thu</th><th rowspan='3'>Doanh thu lũy kế</th></tr>\n" +
+              "\t<tr class='text-center'><th colspan='2'>LiveInfo ads</th><th>SMS 090</th><th>Nanova</th><th>AVB</th><th colspan='2'>LiveInfo ads</th><th>SMS 090</th><th>Nanova</th><th>AVB</th><th colspan='2'>LiveInfo ads</th><th>SMS 090</th><th>Nanova</th><th>AVB</th></tr>\n" +
+              "\t<tr class='text-center'><th>DK ID</th><th>DK TK</th><th>ID</th><th>TK</th><th>KM ID</th><th>DK ID</th><th>DK TK</th><th>ID</th><th>TK</th><th>KM ID</th><th>DK ID</th><th>DK TK</th><th>ID</th><th>TK</th><th>KM ID</th></tr>";
+      reportWAP = showTable1("", logger, data, header, listDate, unit, "reg_dkid", "reg_kt", "reg_id", "reg_tk", "reg_avb","reg_total", "unreg_dkid_24h", "unreg_kt_24h", "unreg_id_24h", "unreg_tk_24h", "unreg_avb_24h","unreg_total", "quantity_reg_dkid", "quantity_reg_kt","quantity_reg_id", "quantity_reg_tk", "quantity_avb", "total");
     } catch (Exception e) {
       out.print("Exception: SQL: " + sql + " | exceptionMsg: " + e.getMessage());
       reportWAP = serviceName;
@@ -97,7 +99,7 @@
 <head>
   <style>
     td {
-      min-width:40px;
+      min-width:80px;
     }
     .text-center { text-align: center; }
     .text-end { text-align: end;}
@@ -132,7 +134,6 @@
       list.add(BaseUtils.formatTime("yyyyMMdd", o));
       o = BaseUtils.addTime(o, Calendar.DATE, 1);
     }
-    Collections.reverse(list);
     return list;
   }
 
@@ -162,6 +163,7 @@
       NumberFormat nf = new DecimalFormat("###,###,###,###");
 
       for (String date : listDate) {
+        int count = 1;
         str += ("<tr> <td class='text-center'>"+ formatDate(date) +"</td>");
 
         for (String column : columns) {
@@ -176,11 +178,11 @@
           } else {
             str += ("<td class='text-end'>" + nf.format(BaseUtils.parseLong(value, 0L)) + "</td>");
           }
-          Long temp = totalMap.get(column);
-          temp = temp == null ? 0L : temp;
-          totalMap.put(column, temp + BaseUtils.parseLong(value, 0L));
+          if (column.equalsIgnoreCase("total")) {
+            total += BaseUtils.parseLong(value, 0L);
+          }
         }
-        str += ("<td class='text-end'>Lũy kế</td>");
+        str += ("<td class='text-end'>"+ nf.format(total) +"</td>");
         str += ("<tr>");
       }
       str += ("</table>");

@@ -97,7 +97,7 @@
             }
         }
         //CDR cộng tiền
-        String where=" where a.report_time>='20210617' and a.status_exporttopup=0 and a.category='ikv3' and b.status=2 and a.created_time>='"+DateToStringByFormatConfig(beginctkm,"yyyyMMdd")+"' and a.created_time<='"+DateToStringByFormatConfig(endctkm,"yyyyMMdd")+"' + interval 1 day";
+        String where=" where a.report_time>='20210617' and a.status_exporttopup=0 and a.category='ikv3' and b.status=1 and a.created_time>='"+DateToStringByFormatConfig(beginctkm,"yyyyMMdd")+"' and a.created_time<='"+DateToStringByFormatConfig(endctkm,"yyyyMMdd")+"' + interval 1 day";
         String sqlselect="select a.msisdn,b.topup_fee,b.topup_time,b.mt from stats_kmtq a join kmtq b on a.kmtq_id=b.id "+where;
         String sqlupdate="update stats_kmtq a join kmtq b on a.kmtq_id=b.id set a.status_exporttopup=2 "+where;
         log.info("_"+transid+"_sql topup: "+sqlselect);

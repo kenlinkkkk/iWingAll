@@ -33,13 +33,20 @@
     String topupTime = request.getParameter("topup_time");
     String mt = "Thue bao "+ msisdnTopup +" duoc nap 10000 dong vao tai khoan";
     logger.info(transid + "::Params::id=" + idTopup +":-:msisdn="+ msisdnTopup +":-:status="+ topupStatus +":-:response="+ topupResponse +":-:time="+ topupTime);
-
-    String kmtqTopup = "Update kmtq set " +
+    String kmtqTopup = "";
+    if (Integer.parseInt(topupStatus) == 1) {
+        kmtqTopup = "Update kmtq set " +
             "topup_time =  STR_TO_DATE('"+ topupTime +"', '%Y%m%d%H%i%s'), " +
             "tracenumber = '"+ topupResponse +"'," +
             "mt = '"+ mt + "'," +
             "status = " + Integer.parseInt(topupStatus) + " " +
             "where id = " + Integer.parseInt(idTopup);
+    } else {
+        kmtqTopup = "Update kmtq set " +
+            "tracenumber = '"+ topupResponse +"'," +
+            "status = " + Integer.parseInt(topupStatus) + " " +
+            "where id = " + Integer.parseInt(idTopup);
+    }
 
     logger.info(transid + "::Q:: " + kmtqTopup);
 
