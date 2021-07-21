@@ -148,7 +148,7 @@
                             sendSMS1Brandname(transid, passMT, "brandname");
 //                            sendSMS0(transid, msisdn, contentMT, "brandname");
 
-                            String sqlUpdateNotEm = "update subscriber set subnote4='chagesuccess',cpid='DK ID ID' where msisdn = '" + msisdn + "' and package_id='ID'";
+                            String sqlUpdateNotEm = "update subscriber set subnote4='chagesuccess',cpid='"+ commandCode +"' where msisdn = '" + msisdn + "' and package_id='ID'";
                             int rsUpdateNotEm = xbaseDAO.execSql(transid, sqlUpdateNotEm);
                             logger.info("update subscriber chart not em resulr: " + rsUpdateNotEm);
                         }

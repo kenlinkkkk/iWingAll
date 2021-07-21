@@ -58,7 +58,7 @@
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='DK ID' then 1 else 0 end), 0) reg_dkid, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid in ('DK TK', 'KT') then 1 else 0 end), 0) reg_kt, " +
               "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid='KM ID ID' then 1 else 0 end), 0) reg_avb, " +
-              "COALESCE(sum(case when action in ('FirstREG','ReREG') and cpid in ('ID', 'TK', 'DK ID', 'KT', 'DK TK', 'KM ID ID') then 1 else 0 end), 0) reg_total, " +
+              "COALESCE(sum(case when action in ('FirstREG','ReREG') then 1 else 0 end), 0) reg_total, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
               "from his_"+month+" where action in ('FirstREG','ReREG') and cpid='ID' and date(created_time) = date(DATE_ADD(a.created_time,INTERVAL -1 day))) then 1 else 0 end),0) unreg_id_24h, " +
               "COALESCE(sum(case when action in ('UNREG') and msisdn in (select distinct(msisdn) " +
